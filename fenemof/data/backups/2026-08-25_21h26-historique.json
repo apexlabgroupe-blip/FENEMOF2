@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "924a1635-40cb-4924-958b-5c1e0996d863",
+    "date": "2026-08-25 13:19:09",
+    "type": "Inscription Cosudo",
+    "detail": "BBN MPIBA — section lycee — 16 ans"
+  },
+  {
+    "id": "7063d8d5-c1c4-4207-8cfc-afea0b793969",
+    "date": "2026-08-25 13:18:33",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « Test Faille2 » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "3bbb08b4-e269-4572-98e6-f3a94ff622d6",
+    "date": "2026-08-25 13:18:32",
+    "type": "Inscription Cosudo",
+    "detail": "Test Faille2 — section lycee — 16 ans"
+  },
+  {
+    "id": "e4a4ef61-3e7a-40de-8c23-6bd7fd2cf0c8",
+    "date": "2026-08-25 13:18:14",
+    "type": "Paiement",
+    "detail": "Test Faille declare avoir paye - EN ATTENTE de validation du createur (badge bloque)"
+  },
+  {
+    "id": "1bc961ed-9924-47d8-9b82-a1d63160b75b",
+    "date": "2026-08-25 13:18:14",
+    "type": "Inscription Cosudo",
+    "detail": "Test Faille — section lycee — 16 ans"
+  },
+  {
+    "id": "20d3f910-d61d-413b-99ae-f56c771484ca",
+    "date": "2026-08-25 13:14:16",
+    "type": "Historique",
+    "detail": "2 inscription(s) supprimée(s) de l'historique (cible : all)"
+  },
+  {
+    "id": "1e5300cc-d531-449d-a1eb-90c72590462f",
+    "date": "2026-08-25 13:13:52",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? IJNJNHU see ? - badge active automatiquement"
+  },
+  {
+    "id": "d35c19d4-9950-4194-ac7d-aea7e260aed8",
+    "date": "2026-08-25 13:13:50",
+    "type": "Inscription Cosudo",
+    "detail": "IJNJNHU see — section lycee — 18 ans"
+  },
+  {
+    "id": "80f1f3a0-a37c-47b1-a292-55b3c6f7b3b0",
+    "date": "2026-08-25 13:06:20",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "36717053-3187-43b3-9257-8007d26e5b1f",
+    "date": "2026-08-25 13:06:13",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "196fe8e2-dda5-472c-8ff4-c24ab9e566f9",
+    "date": "2026-08-25 13:06:09",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "ea7c5da3-f055-426f-92f6-bc000f7ede19",
+    "date": "2026-08-25 13:06:05",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "c92e9484-f601-477a-918a-137efcf2c3dd",
+    "date": "2026-08-25 13:06:01",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "ead4295c-aff9-4bdd-8575-4ecd7c11fce5",
+    "date": "2026-08-25 13:05:57",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "2e5cf8f6-17e7-4f58-a85c-8c20e09cd7b4",
+    "date": "2026-08-25 13:05:51",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "e435314e-bd4e-45e9-812b-26616cb8b10b",
+    "date": "2026-08-25 13:05:46",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "28be9844-967d-4983-b3fb-fc9e373864e7",
+    "date": "2026-08-25 13:05:37",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "ee29ffbd-2039-40bb-b064-34a7b45abe25",
+    "date": "2026-08-25 13:05:32",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "15257b8a-1178-42c5-b75d-f132021b4b9c",
+    "date": "2026-08-25 13:05:23",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "61a5a1c2-201e-4604-8ff7-d7463210c126",
+    "date": "2026-08-25 13:05:16",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "cc6ede97-e4ad-41dc-a69f-63ad0b8e2f0f",
+    "date": "2026-08-25 13:05:11",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "c71e9fec-c98b-46d7-9379-e6087f9069e8",
+    "date": "2026-08-25 13:05:06",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "f9d76f6d-2859-4f26-ad29-06f8e5f9d98e",
+    "date": "2026-08-25 13:03:21",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "f86e54f3-e67e-45a3-89e2-e1d368acaebf",
+    "date": "2026-08-25 13:03:16",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "0bf672c1-4a35-40aa-bc87-4b54af488f65",
+    "date": "2026-08-25 13:03:06",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "c4ae91f0-c4bd-4407-bf7c-63e90849854a",
+    "date": "2026-08-25 13:02:26",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? BBN MPIBA ? - badge active automatiquement"
+  },
+  {
+    "id": "cdcd1f68-cafa-4d6f-8ca1-f10dcee76dbd",
+    "date": "2026-08-25 13:02:24",
+    "type": "Inscription Cosudo",
+    "detail": "BBN MPIBA — section lycee — 16 ans"
+  },
+  {
+    "id": "ddb9e945-e8d9-49f1-a82b-5b8d1621d892",
+    "date": "2026-08-25 12:58:49",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « Fanny Test » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "c0d02605-4f6b-47cb-9d85-42766e116853",
+    "date": "2026-08-25 12:58:49",
+    "type": "Inscription Cosudo",
+    "detail": "Fanny Test — section lycee — 16 ans"
+  },
+  {
+    "id": "345e7211-c18a-44ac-9af7-cfee2025b2b9",
+    "date": "2026-08-25 12:58:05",
+    "type": "Inscription Cosudo",
+    "detail": "Marc Test — section college — 16 ans"
+  },
+  {
+    "id": "cba59e2b-02d4-41df-b194-0a07779c7d73",
+    "date": "2026-08-25 12:57:40",
+    "type": "Inscription Cosudo",
+    "detail": "Lina Test — section college — 15 ans"
+  },
+  {
+    "id": "f15ac727-c093-44e5-a470-fc29e5992691",
+    "date": "2026-08-25 12:57:14",
+    "type": "Inscription Cosudo",
+    "detail": "Rachelle Bakala — section college — 15 ans"
+  },
+  {
+    "id": "a9b98b66-40dc-4ff9-8035-00d437254acd",
+    "date": "2026-08-25 12:54:20",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? tdtd see ? - badge active automatiquement"
+  },
+  {
+    "id": "641bf297-1f15-42a5-8352-1fbd95fddeae",
+    "date": "2026-08-25 12:54:17",
+    "type": "Inscription Cosudo",
+    "detail": "tdtd see — section universite — 26 ans"
+  },
+  {
+    "id": "424c6be7-50c5-4b15-8265-2df5859fd447",
+    "date": "2026-08-24 04:59:19",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? sedec BB ? - badge active automatiquement"
+  },
+  {
+    "id": "3ad31bef-8b04-41c1-b609-5b6dc3c329cb",
+    "date": "2026-08-24 04:59:17",
+    "type": "Inscription Cosudo",
+    "detail": "sedec BB — section lycee — 5 ans"
+  },
+  {
+    "id": "afcfad5f-7c05-4fbf-8db1-5ed02e918e65",
+    "date": "2026-08-24 04:57:54",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? Lina Kouka ? - badge active automatiquement"
+  },
+  {
+    "id": "a085e315-359e-4530-baa6-90aa569c9da9",
+    "date": "2026-08-24 04:57:54",
+    "type": "Inscription Cosudo",
+    "detail": "Lina Kouka — section college — 15 ans"
+  },
+  {
+    "id": "7c153891-d13b-4441-8dbe-bd1e101b2a03",
+    "date": "2026-08-24 04:57:54",
+    "type": "Inscription",
+    "detail": "Établissement « Lycee Recu Test » — section(s) lycee — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "378a0432-3d2e-4e59-8f8a-548e2675b756",
+    "date": "2026-08-24 04:57:11",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? Lycee Test Multi ? - badge active automatiquement"
+  },
+  {
+    "id": "df97fd73-74cc-4a62-ab8a-8a164d340016",
+    "date": "2026-08-24 04:57:11",
+    "type": "Inscription",
+    "detail": "Établissement « Lycee Test Multi » — section(s) lycee — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "801e88be-939e-4b83-bf37-1c48cec6f447",
+    "date": "2026-08-24 04:41:40",
+    "type": "Inscription Cosudo",
+    "detail": "Julie Test — section lycee — 16 ans"
+  },
+  {
+    "id": "59711a2a-dea1-470e-9dc8-eaddb3fffce3",
+    "date": "2026-08-24 04:41:40",
+    "type": "Inscription",
+    "detail": "Établissement « DiagTest » — section(s) lycee — 1 élève(s) (transaction )"
+  },
+  {
+    "id": "a6157718-8404-41c0-accc-7af4259834bd",
+    "date": "2026-08-24 04:39:00",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? IJNJNHU YHHBG ? - badge active automatiquement"
+  },
+  {
+    "id": "8874bf65-fae9-41d9-9eac-12f4663df27e",
+    "date": "2026-08-24 04:38:58",
+    "type": "Inscription Cosudo",
+    "detail": "IJNJNHU YHHBG — section lycee — 5 ans"
+  },
+  {
+    "id": "3e0ec7be-5dcd-44b3-943a-35df3d14a65c",
+    "date": "2026-08-24 04:36:16",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? tdtd see ? - badge active automatiquement"
+  },
+  {
+    "id": "2b459807-5cb4-4df2-8455-2726ff6924e4",
+    "date": "2026-08-24 04:36:14",
+    "type": "Inscription Cosudo",
+    "detail": "tdtd see — section universite — 21 ans"
+  },
+  {
+    "id": "1a414bea-122b-4db5-8fd9-408af85054c7",
+    "date": "2026-08-24 04:34:21",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "efb1b5ab-479b-4023-8d3b-2544ec71953a",
+    "date": "2026-08-24 04:33:49",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "c4ff39e7-e98c-4a81-aa7b-099cf5d04e70",
+    "date": "2026-08-24 04:33:35",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "2d349a0e-6885-4f6d-a8d6-d70734abaa06",
+    "date": "2026-08-24 04:33:29",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "9619f173-8a08-4b73-b010-cff694d0f6c4",
+    "date": "2026-08-24 04:31:37",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? Jean TestPay2 ? - badge active automatiquement"
+  },
+  {
+    "id": "e6a6befa-e7cd-4a4f-982e-e3773180f43a",
+    "date": "2026-08-24 04:31:36",
+    "type": "Inscription Cosudo",
+    "detail": "Jean TestPay2 — section college — 16 ans"
+  },
+  {
+    "id": "34df5a64-a836-4295-95ad-48c24cb77d83",
+    "date": "2026-08-24 04:31:05",
+    "type": "Inscription Cosudo",
+    "detail": "Jean TestPay — section college — 16 ans"
+  },
+  {
+    "id": "3df552b6-e4a8-417f-9e9d-1b44ad0c7eb8",
+    "date": "2026-08-24 04:29:01",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? BBN BB ? - badge active automatiquement"
+  },
+  {
+    "id": "9a916f36-bbd4-47bd-805b-4aa54857efd3",
+    "date": "2026-08-24 04:28:59",
+    "type": "Inscription Cosudo",
+    "detail": "BBN BB — section universite — 26 ans"
+  },
+  {
+    "id": "2656bff7-3338-4998-a562-921ea3a5a3c1",
+    "date": "2026-08-24 04:27:10",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test Sans Logo » — section(s) college — 1 élève(s) (transaction )"
+  },
+  {
+    "id": "866cd061-67aa-4b43-8e15-c3236212409b",
+    "date": "2026-08-24 04:18:17",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section universite — 26 ans"
+  },
+  {
+    "id": "54bae230-0a99-4544-b260-75dfce459cfe",
+    "date": "2026-08-24 04:12:51",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 5 ans"
+  },
+  {
+    "id": "dc8da7f4-ee38-488f-b7d4-15331d26555c",
+    "date": "2026-08-24 04:11:44",
+    "type": "Inscription Cosudo",
+    "detail": "Jean Test — section college — 15 ans"
+  },
+  {
+    "id": "c1092d63-66c5-4e5b-a24a-a25aee84ac1d",
+    "date": "2026-08-24 04:11:27",
+    "type": "Inscription",
+    "detail": "Établissement « Test Ecole » — section(s) college, lycee — 2 élève(s) (transaction )"
+  },
+  {
+    "id": "def0095d-9f70-48d7-86ae-472d5cc5735c",
+    "date": "2026-08-24 04:08:51",
+    "type": "Inscription Cosudo",
+    "detail": "tdtd see — section universite — 19 ans"
+  },
+  {
+    "id": "f3a08e6c-ff77-41f9-b776-3334141316e3",
+    "date": "2026-08-24 02:40:51",
+    "type": "Inscription",
+    "detail": "Établissement « Lycee Test » — section(s) lycee — 2 élève(s) (transaction )"
+  },
+  {
+    "id": "4c8f7280-d364-4aac-94e1-ed8089845947",
+    "date": "2026-08-24 02:16:37",
+    "type": "Inscription Cosudo",
+    "detail": "Grace Mabiala — section lycee — 19 ans"
+  },
+  {
+    "id": "949f5f4b-5196-4595-afe2-fa23004a5dc0",
+    "date": "2026-08-24 02:16:37",
+    "type": "Inscription Cosudo",
+    "detail": "Junior Bongolo — section college — 14 ans"
+  },
+  {
+    "id": "21c53c61-3e1b-4251-b4fe-cf56d4b137a9",
+    "date": "2026-08-24 02:07:07",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "7351f53b-b3a1-4b29-b5eb-2ce69e06c0a7",
+    "date": "2026-08-24 02:04:44",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "860e3968-442e-40ed-b0a8-089be21157eb",
+    "date": "2026-08-23 21:37:37",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 19 ans"
+  },
+  {
+    "id": "9fd0cecb-3905-4800-a702-c475eb7b9e0f",
+    "date": "2026-08-23 21:26:57",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "a0fbbf88-80d6-4b96-9a6f-030473465a01",
+    "date": "2026-08-23 21:07:08",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "be450633-33dd-4d6e-aec0-3200204308e4",
+    "date": "2026-08-23 21:05:19",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "a994b0b3-9ac4-45ad-a857-2d26c4851228",
+    "date": "2026-08-23 17:50:23",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 19 ans"
+  },
+  {
+    "id": "dba710a5-50da-4488-9eea-053538a0bd4a",
+    "date": "2026-08-23 17:39:24",
+    "type": "Inscription Cosudo",
+    "detail": "sedec see — section lycee — 20 ans"
+  },
+  {
+    "id": "d5750cdd-2956-4642-8e40-f1cfaf66c305",
+    "date": "2026-08-23 17:03:00",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "a01620f8-da15-4e45-845b-beac50a417c7",
+    "date": "2026-08-23 17:02:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "ac939240-94ab-4c65-852a-09814e8d77a8",
+    "date": "2026-08-23 17:02:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "3066ea1b-fb4f-4eeb-981e-5ff1e0aaf5c4",
+    "date": "2026-08-23 17:02:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "515054fe-d2d7-4f3b-b113-a7473c913989",
+    "date": "2026-08-23 17:02:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "0e545d39-134b-42bd-a86c-eb633fde258f",
+    "date": "2026-08-23 17:02:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "4069068b-7b8b-45ea-b887-b573d831ab15",
+    "date": "2026-08-23 17:02:51",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "091e76a8-b745-40f3-a09d-bbbde9701489",
+    "date": "2026-08-23 17:02:51",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "d949af46-d46e-4dce-a917-718c053ec831",
+    "date": "2026-08-23 17:02:51",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "8df3b5bd-0398-409b-93e0-ab97eb88775c",
+    "date": "2026-08-23 17:02:50",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "871d6384-a3a4-493a-af0a-9f266bc5a39b",
+    "date": "2026-08-23 17:02:42",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "3b813d81-6ec0-4d3c-a5a9-eca068325fc7",
+    "date": "2026-08-23 17:02:42",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "8d7a4559-711b-47c1-8634-8652bf3a6b6e",
+    "date": "2026-08-23 17:02:35",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "1a0ce440-3380-4a4e-a86c-23b826218e9b",
+    "date": "2026-08-23 17:02:35",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "ab00fe88-d624-42cb-946d-1092c95335fc",
+    "date": "2026-08-23 17:02:29",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "469b1667-cd68-48c0-94cb-87e3f222d2be",
+    "date": "2026-08-23 17:02:29",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "a0107195-3ccf-4494-96bd-aba8508baf57",
+    "date": "2026-08-23 17:02:24",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "d25fc26b-f353-490e-b1fb-8fedeb2b15af",
+    "date": "2026-08-23 17:02:24",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "51b44521-fbf7-459c-8840-f183fcec578c",
+    "date": "2026-08-23 17:02:24",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "a8ff339b-8361-40c4-9fb2-8adb527b7df9",
+    "date": "2026-08-23 17:02:23",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "7894b7fe-e968-47c3-9e54-0d22148e21fc",
+    "date": "2026-08-23 17:02:23",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "6fe707bd-9659-4737-8bd5-dd7a765d5231",
+    "date": "2026-08-23 17:02:23",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "f012e9af-4b72-4857-8f7c-d99a59eb9bfa",
+    "date": "2026-08-23 17:02:23",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "b880edd7-ceb5-420c-925c-cb8c99172ddf",
+    "date": "2026-08-23 17:02:22",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "24566316-4202-4a3e-9a71-b5882268bec3",
+    "date": "2026-08-23 17:02:22",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "738d8c0a-8438-4d06-a8da-e536993a70ce",
+    "date": "2026-08-23 17:02:22",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "bd5f37e9-4d68-4024-9c76-f9848a20dbd2",
+    "date": "2026-08-23 17:02:22",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "63f53f4e-2c4b-48e5-9cd6-bef09ede973c",
+    "date": "2026-08-23 17:02:21",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "62396385-88a6-44a4-8e12-5fe0a86ab035",
+    "date": "2026-08-23 17:02:18",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "4b9e7463-5052-4962-b742-08317cdd25c7",
+    "date": "2026-08-23 17:02:18",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "0ccf093f-b60f-45fe-ad4b-a63a15c4db09",
+    "date": "2026-08-23 17:02:03",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "19eb9c66-b03d-4da8-835a-6bc7776b8b4e",
+    "date": "2026-08-23 17:02:03",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "c4c7e424-2eef-4acc-b54b-9cf469168a9f",
+    "date": "2026-08-23 17:02:03",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "847ace46-f9d8-4f0b-8d42-07dfeba29063",
+    "date": "2026-08-23 17:02:02",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "16ca1179-dddd-4c65-9518-88804a294ff5",
+    "date": "2026-08-23 17:02:01",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "61562024-3a67-44bb-82a1-2ba32f04436b",
+    "date": "2026-08-23 17:01:59",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "203c565b-47c7-43ca-9f2b-207334303e27",
+    "date": "2026-08-23 16:19:44",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec MPIBA » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "389c99da-2080-4638-a6a5-4010857f2294",
+    "date": "2026-08-23 16:19:39",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec MPIBA » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "e05ea924-9489-47b2-91f7-830f3966b13a",
+    "date": "2026-08-23 16:18:54",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec MPIBA » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "93a5591d-5bd4-4e0d-955e-9b11cb5269d2",
+    "date": "2026-08-23 16:15:01",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 20 ans"
+  },
+  {
+    "id": "6359aee7-631c-43f4-9e4d-f292bcc49eb1",
+    "date": "2026-08-23 16:11:40",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "d53dc518-d240-487c-8d10-e0bba1e24cdf",
+    "date": "2026-08-23 16:10:47",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 18 ans"
+  },
+  {
+    "id": "964f56d4-5886-4770-bbdf-6cc7c98b0dbb",
+    "date": "2026-08-23 10:02:17",
+    "type": "Photos Cosudo",
+    "detail": "1 photo(s) Cosudo ajoutée(s)"
+  },
+  {
+    "id": "255cb2e3-ab20-4893-9372-b37d825d0edc",
+    "date": "2026-08-23 10:02:05",
+    "type": "Photos Cosudo",
+    "detail": "Photo Cosudo supprimée : cosudo_20260823084629_022537.jpeg"
+  },
+  {
+    "id": "3d60938b-f58a-4c33-8215-3aa950276fc6",
+    "date": "2026-08-23 09:12:26",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? Test Diag ? - badge active automatiquement"
+  },
+  {
+    "id": "a05d0f6f-a8a0-4c2a-b1ab-6362b915b870",
+    "date": "2026-08-23 09:12:26",
+    "type": "Inscription Cosudo",
+    "detail": "Test Diag — section universite — 21 ans"
+  },
+  {
+    "id": "d3ba777a-0efb-407b-a308-d828ea691df1",
+    "date": "2026-08-23 09:12:26",
+    "type": "Logo",
+    "detail": "Logo Cosudo mis a jour"
+  },
+  {
+    "id": "f840f33a-622e-433a-8b84-db3a6ac14d9d",
+    "date": "2026-08-23 08:46:29",
+    "type": "Photos Cosudo",
+    "detail": "1 photo(s) Cosudo ajoutée(s)"
+  },
+  {
+    "id": "68573838-2a2b-4e59-8b73-6802e8addbd2",
+    "date": "2026-08-22 23:50:38",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "12e71648-9731-4ef4-a18f-48569fed924c",
+    "date": "2026-08-22 23:50:03",
+    "type": "Inscription Cosudo",
+    "detail": "tdtd MPIBA — section lycee — 22 ans"
+  },
+  {
+    "id": "857926c4-9d28-4ce3-9a3d-01dd21f109c4",
+    "date": "2026-08-22 23:49:17",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "cc01cb1f-6ede-4930-a295-77f1289d8199",
+    "date": "2026-08-22 23:47:44",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "1eef2dca-cc4f-4d4c-8e19-35aaccd15b5d",
+    "date": "2026-08-22 23:44:05",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 20 ans"
+  },
+  {
+    "id": "464e3d37-28ec-481e-a3b0-0364ff17a153",
+    "date": "2026-08-22 23:40:24",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec mpiba » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "fae23c2a-7f34-4daa-9106-ff6713992961",
+    "date": "2026-08-22 23:39:40",
+    "type": "Paiement",
+    "detail": "Paiement Yelen confirme par le client pour ? Client TestAuto ? - badge active automatiquement"
+  },
+  {
+    "id": "d67e361c-5027-4a52-8f3c-53fe2658e6bd",
+    "date": "2026-08-22 23:39:39",
+    "type": "Inscription Cosudo",
+    "detail": "Client TestAuto — section lycee — 20 ans"
+  },
+  {
+    "id": "80b5234e-491b-4a6f-a4d3-507da850f6fa",
+    "date": "2026-08-22 23:32:34",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec MPIBA » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "26e80a8f-f1ea-437f-9581-3c354e3085ce",
+    "date": "2026-08-22 23:31:01",
+    "type": "Inscription Cosudo",
+    "detail": "sedec MPIBA — section lycee — 19 ans"
+  },
+  {
+    "id": "48cbe2ef-5168-46bc-a35f-2e7e32810b89",
+    "date": "2026-08-22 21:57:31",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "dfe52068-8891-4f27-912b-32930f003718",
+    "date": "2026-08-22 21:57:15",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « College Animation Test » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "12d4d4fa-af1f-4e59-addd-a0b9795a5c11",
+    "date": "2026-08-22 21:57:14",
+    "type": "Inscription",
+    "detail": "Établissement « College Animation Test » — section(s) primaire — 1 élève(s) (transaction )"
+  },
+  {
+    "id": "6caf9c6d-de4c-43fb-8309-8407b338cdcd",
+    "date": "2026-08-22 21:06:50",
+    "type": "Inscription",
+    "detail": "Établissement « sedec mpiba » — section(s) primaire — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "ac80d141-c081-465f-91d4-185f28a32caf",
+    "date": "2026-08-22 21:02:14",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "dfa20c26-7b8a-4ccd-b595-7e8b635a34cd",
+    "date": "2026-08-22 21:02:06",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "dce1f04e-171d-4522-a7a4-41c6b1db79fd",
+    "date": "2026-08-22 02:56:24",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec mpiba » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "c27d6112-026f-436e-a430-b3965de1a9e1",
+    "date": "2026-08-22 02:29:48",
+    "type": "Inscription",
+    "detail": "Établissement « sedec mpiba » — section(s) primaire — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "c9547ea7-9422-4d27-8ae0-9408402b7b73",
+    "date": "2026-08-22 02:24:05",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "b4aa8ad3-577f-4aea-a78a-55a60c932588",
+    "date": "2026-08-22 02:21:59",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « College Test Logo » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "194f7dea-7548-4baf-9026-9fd7e3077633",
+    "date": "2026-08-22 02:21:59",
+    "type": "Paiement",
+    "detail": "Statut remis en attente pour « sedec mpiba » — badge désactivé"
+  },
+  {
+    "id": "c1e470eb-4522-485c-908d-d84f86832722",
+    "date": "2026-08-22 02:21:04",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec mpiba » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "8142733b-b2f7-4535-8866-b3448c71ed0a",
+    "date": "2026-08-22 02:20:04",
+    "type": "Inscription",
+    "detail": "Établissement « College Test Logo » — section(s) college — 1 élève(s) (transaction )"
+  },
+  {
+    "id": "007fbdd0-aeac-4713-a985-4ff5bb7c012a",
+    "date": "2026-08-22 01:43:29",
+    "type": "Inscription",
+    "detail": "Établissement « sedec mpiba » — section(s) primaire — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "f358e828-f1fe-4312-87ab-21feef6000d2",
+    "date": "2026-08-22 01:29:02",
+    "type": "Inscription Cosudo",
+    "detail": "Divine Nkounkou — section universite — 24 ans"
+  },
+  {
+    "id": "dcc46742-abd8-4ea4-bb67-82b0286adee3",
+    "date": "2026-08-22 01:28:11",
+    "type": "Inscription Cosudo",
+    "detail": "Grace Mbala — section lycee — 19 ans"
+  },
+  {
+    "id": "d16dc6f5-b1d7-4cf7-8093-f9818cfb9b67",
+    "date": "2026-08-22 01:11:33",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "65ab4a24-0c5b-4104-bcb9-56d9229e1b77",
+    "date": "2026-08-22 01:10:09",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « sedec mpiba » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "c0db00a3-99a8-46b3-b1e0-c30f453bf846",
+    "date": "2026-08-22 01:03:40",
+    "type": "Inscription",
+    "detail": "Établissement « sedec mpiba » — section(s) primaire — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "3d7e9b84-8a76-48ad-b299-2edd0ec7231b",
+    "date": "2026-08-22 01:00:20",
+    "type": "Inscription Cosudo",
+    "detail": "Inscription Cosudo supprimée"
+  },
+  {
+    "id": "ed868b8f-700f-4001-b18c-0dca2bebd77c",
+    "date": "2026-08-22 01:00:20",
+    "type": "Inscription Cosudo",
+    "detail": "Établissement « Univ Test » — section universite — 1 élève(s) (transaction 123)"
+  },
+  {
+    "id": "72ea81ab-895e-442e-85b3-1227cd83bf80",
+    "date": "2026-08-22 00:59:55",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "e3dc98bb-bad2-4e1d-a4c5-ec728dfa4b04",
+    "date": "2026-08-22 00:59:54",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test 2 » — section(s) primaire, college, lycee — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "408f3eb6-17fd-49b0-b598-7d9914bb3a24",
+    "date": "2026-08-22 00:37:53",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "e2446fa8-b689-4efb-82b3-dc7b03f32a45",
+    "date": "2026-08-22 00:37:52",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « Complexe Scolaire Loango » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "95ce6f98-e330-40ab-9426-fe79b0afb8d7",
+    "date": "2026-08-22 00:37:52",
+    "type": "Inscription",
+    "detail": "Établissement « Complexe Scolaire Loango » — section(s) primaire, lycee — 3 élève(s) (transaction )"
+  },
+  {
+    "id": "50fe1385-004e-4667-8a1d-a0b0ad3f61c2",
+    "date": "2026-08-21 23:51:24",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "40994f96-bd1a-417b-89aa-aecb6743e5d8",
+    "date": "2026-08-21 23:51:21",
+    "type": "Inscription",
+    "detail": "Établissement « Lycee Technique » — section lycee — 3 élève(s) (transaction TEST9999)"
+  },
+  {
+    "id": "52da5f23-fd1b-44f0-87be-31291af68bab",
+    "date": "2026-08-21 23:31:20",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "57e30ead-2d04-4681-9ca9-d174c1a4b8b2",
+    "date": "2026-08-21 23:31:20",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « College Sagesse » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "297baf09-e8f9-4de0-8574-48306dbcb57e",
+    "date": "2026-08-21 23:31:19",
+    "type": "Inscription",
+    "detail": "Établissement « College Sagesse » — section college — 1 élève(s) (transaction YELEN99)"
+  },
+  {
+    "id": "f2c04115-f7d3-453e-9604-e04e17ed0116",
+    "date": "2026-08-21 23:25:33",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "4985d1f4-2a06-4f0a-8953-09ed378312d7",
+    "date": "2026-08-21 23:25:03",
+    "type": "Paiement",
+    "detail": "Paiement vérifié pour « Ecole Test Massengo » — badge activé dans l'Espace établissement"
+  },
+  {
+    "id": "f0e7b3fb-d052-4c9f-9222-6e1bb19bfcc4",
+    "date": "2026-08-21 23:25:02",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test Massengo » — section primaire — 1 élève(s) (transaction TEST1234)"
+  },
+  {
+    "id": "a8d0ac17-69e4-4605-928a-129d0c1dfbe0",
+    "date": "2026-08-07 00:34:42",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "3c1d7275-fd16-4e2a-be41-442b94495620",
+    "date": "2026-08-07 00:34:42",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "79987949-d101-4512-adcd-16420395899d",
+    "date": "2026-08-07 00:34:24",
+    "type": "Sauvegarde",
+    "detail": "Sauvegarde complète créée : backup_20260807_003424.json"
+  },
+  {
+    "id": "407d327b-1277-4ede-87b4-a2977aee4814",
+    "date": "2026-08-07 00:16:36",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test 2 » — section lycee — 1 élève(s) (transaction TRX5678)"
+  },
+  {
+    "id": "18b306b3-0a47-48d5-a4c9-b871d8092d29",
+    "date": "2026-08-07 00:16:36",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test » — section primaire — 1 élève(s) (transaction TRX1234)"
+  },
+  {
+    "id": "4d5a2fef-8dad-460d-bebc-24b5b4ce9172",
+    "date": "2026-08-07 00:11:27",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 1350 FCFA"
+  },
+  {
+    "id": "25e043d4-1c84-4841-b908-623e7da83704",
+    "date": "2026-08-07 00:11:22",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 1350 FCFA"
+  },
+  {
+    "id": "089f6ac7-d317-4fc8-9138-e01e4f281e4b",
+    "date": "2026-08-07 00:05:36",
+    "type": "Assistant IA",
+    "detail": "Question IA supprimée"
+  },
+  {
+    "id": "67f2efee-79e8-47cb-84e5-6eb58f207be6",
+    "date": "2026-08-07 00:05:35",
+    "type": "Écoles",
+    "detail": "École participante supprimée"
+  },
+  {
+    "id": "2c560800-9199-4df8-8b90-81bc08318449",
+    "date": "2026-08-07 00:05:35",
+    "type": "Meilleur élève",
+    "detail": "Meilleur élève supprimé"
+  },
+  {
+    "id": "3435364b-905a-4423-a509-f5e81efdfc60",
+    "date": "2026-08-07 00:05:35",
+    "type": "Édition",
+    "detail": "Édition supprimée"
+  },
+  {
+    "id": "37569205-4716-4679-9f2c-6327297a8dc8",
+    "date": "2026-08-07 00:03:58",
+    "type": "Logo",
+    "detail": "Logo du site mis à jour"
+  },
+  {
+    "id": "67100d6c-7541-4121-ab8a-1c0c8b8dd123",
+    "date": "2026-08-07 00:03:48",
+    "type": "Logo",
+    "detail": "Logo du site mis à jour"
+  },
+  {
+    "id": "27fa20b6-ab50-40fe-a1ce-8034e95c3cb1",
+    "date": "2026-08-07 00:02:05",
+    "type": "Édition",
+    "detail": "Édition actuelle définie : 2026"
+  },
+  {
+    "id": "b201caa4-ee38-4acc-962f-1776ab9a3bc9",
+    "date": "2026-08-07 00:02:05",
+    "type": "Assistant IA",
+    "detail": "Nouvelle question IA ajoutée : Comment avoir le recu ?"
+  },
+  {
+    "id": "246eb274-a93f-4319-9be0-53ef42e9a38d",
+    "date": "2026-08-07 00:02:05",
+    "type": "Écoles",
+    "detail": "École participante ajoutée : Groupe Scolaire Massengo"
+  },
+  {
+    "id": "6b22505f-95a6-4296-a49e-2c90e73e130b",
+    "date": "2026-08-07 00:02:05",
+    "type": "Meilleur élève",
+    "detail": "Meilleur élève Marie Nzaba (2026) ajouté"
+  },
+  {
+    "id": "b01e21f6-1b04-490a-91da-35a65cde80d5",
+    "date": "2026-08-07 00:02:04",
+    "type": "Édition",
+    "detail": "1 photo(s) ajoutée(s) à l'édition 2026"
+  },
+  {
+    "id": "6cb3294c-82cf-4a24-b48c-f7cfbe7e2766",
+    "date": "2026-08-07 00:02:04",
+    "type": "Édition",
+    "detail": "Édition ajoutée : Edition test (2026)"
+  },
+  {
+    "id": "cb7bab99-529d-441e-8b5a-7819ffb5c6f0",
+    "date": "2026-08-06 23:56:00",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 2000 FCFA"
+  }
+]

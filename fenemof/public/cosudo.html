@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosudo — Garçons & filles · Collège, Lycée et Université | Brazzaville</title>
+<meta name="description" content="Cosudo, c'est le club Fenemof pour les élèves du collège, du lycée et de l'université — garçons et filles. Tu t'inscris, tu paies 2 200 FCFA par Yelen Money, et tu reçois ton badge officiel.">
+<meta name="author" content="L'équipe Fenemof, Massengo Brazzaville">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Cosudo — Le club des élèves par Fenemof">
+<meta property="og:description" content="Collège, lycée, université — garçons et filles. Inscription 2 200 FCFA par Yelen Money, badge officiel.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="/img/cosudo-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261104">
+<link rel="stylesheet" href="cosudo.css?v=20261104">
+</head>
+<body class="cosudo-theme">
+
+<!-- ===== EN-TÊTE ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/cosudo" class="brand">
+      <img id="cosudo-logo" src="/img/cosudo-logo.svg" alt="Logo Cosudo" class="brand-logo">
+      <span class="brand-name">COSUDO</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#inscription">Inscription</a>
+      <a href="#cosudo-espace">Mon espace</a>
+      <a href="#cosudo-contact">Contact</a>
+      <a href="/" class="nav-createur">Fenemof »</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== ACCUEIL ===== -->
+<section id="accueil" class="hero cosudo-hero">
+  <div class="hero-bg" aria-hidden="true"><div class="hero-orb" style="left:-8%;top:-6%;background:radial-gradient(closest-side,rgba(13,79,191,.26),transparent 72%)"></div><div class="hero-grid"></div></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-kicker"><span class="kicker-dot"></span> Congo Brazzaville — ouvert à tous</div>
+      <h1><span class="titre-cosudo">Cosudo</span>, <span class="accent">la réussite pour tous</span></h1>
+      <p class="hero-sub">
+        Un programme ouvert aux <strong>garçons et filles</strong> du <strong>Collège</strong>,
+        du <strong>Lycée</strong> et de l'<strong>Université</strong>. Inscris-toi, paie en ligne,
+        et reçois ton badge officiel.
+      </p>
+      <div class="cond-chips">
+        <span class="cond-chip">Garçons &amp; filles</span>
+        <span class="cond-chip">Collège · Lycée · Université</span>
+        <span class="cond-chip">2 200 FCFA / élève · Badge officiel</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#inscription" class="btn btn-accent btn-big">M'inscrire maintenant</a>
+        <a href="#cosudo-espace" class="btn btn-outline-light btn-big">Mon espace</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSCRIPTION ===== -->
+<section id="inscription" class="section">
+  <div class="container">
+    <h2 class="section-title">Inscription Cosudo</h2>
+    <p class="section-sub">
+      Ici, pas d'établissement à renseigner : tu t'inscris <strong>en ton nom personnel</strong>.
+      Une seule candidate par inscription.
+    </p>
+
+    <form id="cosudo-form" class="form" novalidate>
+      <div class="form-block">
+        <h3 class="block-title">1. Tes informations</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="c-nom">Ton nom *</label>
+            <input type="text" id="c-nom" required placeholder="Ex : Mbala">
+          </div>
+          <div class="field">
+            <label for="c-prenom">Ton prénom *</label>
+            <input type="text" id="c-prenom" required placeholder="Ex : Grace">
+          </div>
+          <div class="field">
+            <label for="c-age">Ton âge *</label>
+            <input type="number" id="c-age" min="5" max="35" required placeholder="Ex : 14">
+          </div>
+          <div class="field">
+            <label for="c-sexe">Sexe *</label>
+            <select id="c-sexe" required>
+              <option value="">-- Choisir --</option>
+              <option value="feminin">Féminin</option>
+              <option value="masculin">Masculin</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-tel">Ton numéro de téléphone *</label>
+            <input type="tel" id="c-tel" required placeholder="Ex : 06 123 45 67">
+            <p class="field-hint">C'est ce numéro qui ouvrira ton espace personnel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">2. Tes études</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="cosudo-section">Ta section *</label>
+            <select id="cosudo-section" required>
+              <option value="">-- Choisir ta section --</option>
+              <option value="college">Collège</option>
+              <option value="lycee">Lycée</option>
+              <option value="universite">Université</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cosudo-classe">Ta classe *</label>
+            <select id="cosudo-classe" required disabled>
+              <option value="">-- Choisir d'abord la section --</option>
+            </select>
+          </div>
+        </div>
+        <p class="field-hint">
+          Lycée : 2nde, 1ère, Tle (jusqu'à 22 ans). Université : Licence 1 à Master 2.
+        </p>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">3. Paiement</h3>
+        <p class="field-hint">
+          Après avoir envoyé ce formulaire, le <strong>lien de paiement de ta section</strong> s'affichera
+          automatiquement. Tu payes directement en ligne, en toute sécurité.
+        </p>
+      </div>
+
+      <div id="cosudo-error" class="form-error hidden"></div>
+      <div id="captcha-cos" class="captcha-box"></div>
+        <button type="submit" class="btn btn-primary btn-big">Envoyer mon inscription</button>
+
+      <p class="center-note">
+        Juste après, tu arrives sur la <strong>page de paiement</strong> avec le lien Yelen
+        de TA section. Tu n'as plus qu'à cliquer.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== ESPACE PERSONNEL ===== -->
+<section id="cosudo-espace" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Mon espace Cosudo</h2>
+    <p class="section-sub">
+      Entrez le numéro de téléphone utilisé pendant l'inscription pour suivre votre paiement
+      et récupérer votre badge officiel.
+    </p>
+    <form id="cosudo-espace-form" class="espace-form">
+      <input type="tel" id="cosudo-espace-tel" placeholder="Ex : 06 123 45 67" required>
+      <button type="submit" class="btn btn-primary">Voir mon espace</button>
+    </form>
+    <div id="cosudo-espace-resultat" class="espace-resultat"></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="cosudo-contact" class="site-footer">
+  <div class="container">
+    <h3>Cosudo</h3>
+    <p>Le programme des élèves du Congo — garçons et filles du Collège, du Lycée et de l'Université.</p>
+    <div class="footer-liens">
+      <a href="#inscription">Inscription</a>
+      <a href="#cosudo-espace">Mon espace</a>
+      <a href="/">Site Fenemof</a>
+      <a href="https://wa.me/242064618646" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p>Contact : <strong id="cosudo-contact-email">fenemof@gmail.com</strong> - Téléphone / WhatsApp : <strong id="cosudo-contact-phone">064618646</strong></p>
+    <p>&copy; <span id="cosudo-year"></span> Cosudo. Tous droits réservés. Fait avec soin au Massengo, Brazzaville.</p>
+  </div>
+</footer>
+
+<div id="toast" class="toast hidden"></div>
+
+<a class="whatsapp-float" href="https://wa.me/242064618646" target="_blank" rel="noopener" title="Écrire sur WhatsApp">
+  <svg class="whatsapp-svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+    <path fill="#eaf2fb" d="M16.04 3C9.02 3 3.32 8.7 3.32 15.72c0 2.24.59 4.42 1.7 6.35L3 29l7.11-1.86a12.68 12.68 0 0 0 5.93 1.51h.01c7.01 0 12.72-5.7 12.72-12.72C28.77 8.7 23.06 3 16.04 3zm0 23.36h-.01c-1.87 0-3.71-.5-5.31-1.45l-.38-.23-3.95 1.03 1.05-3.85-.25-.4a10.55 10.55 0 0 1-1.62-5.64c0-5.83 4.75-10.58 10.58-10.58 2.82 0 5.48 1.1 7.47 3.1a10.51 10.51 0 0 1 3.1 7.49c0 5.83-4.75 10.53-10.68 10.53zm5.8-7.92c-.32-.16-1.98-.98-2.28-1.09-.31-.11-.53-.17-.75.16-.22.32-.86 1.09-1.06 1.31-.19.22-.39.25-.71.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.91-1.79-2.23-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.22-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.64c-.22 0-.58.08-.88.4-.3.32-1.15 1.12-1.15 2.74 0 1.61 1.18 3.17 1.34 3.39.16.21 2.3 3.52 5.58 4.93.78.34 1.39.54 1.86.69.79.25 1.5.21 2.07.13.63-.09 1.94-.79 2.21-1.56.27-.76.27-1.42.19-1.56-.08-.13-.29-.21-.61-.37z"/>
+  </svg>
+</a>
+
+<script src="cosudo.js?v=20261104"></script>
+</body>
+</html>

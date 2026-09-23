@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reçu - Fenemof</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { background: var(--black); padding: 30px 20px; }
+  .recu-page {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--dark);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 36px;
+    border-top: 8px solid var(--green);
+    border-bottom: 8px solid var(--purple);
+    color: var(--text);
+  }
+  .recu-head { text-align: center; border-bottom: 2px dashed var(--line); padding-bottom: 18px; margin-bottom: 22px; }
+  .recu-head .brand-name { font-size: 1.8rem; }
+  .recu-head p { color: var(--gray-light); }
+  .recu-numero { display: inline-block; background: var(--purple-light); color: var(--text-bright); font-weight: 800; padding: 6px 16px; border-radius: 999px; margin-top: 8px; }
+  .recu-title { text-align: center; font-size: 1.3rem; margin-bottom: 20px; color: var(--green-dark); }
+  table.recu-table { width: 100%; border-collapse: collapse; }
+  table.recu-table td { padding: 11px 10px; border-bottom: 1px solid var(--line); font-size: 0.98rem; }
+  table.recu-table td:first-child { font-weight: 700; color: var(--gray-light); width: 45%; }
+  table.recu-table tr.total-row td { font-weight: 900; font-size: 1.1rem; color: var(--green-dark); border-top: 2px solid var(--green); }
+  .recu-foot { text-align: center; margin-top: 24px; color: var(--gray-light); font-size: 0.9rem; }
+  .no-print { text-align: center; margin: 20px auto; }
+  .no-print .btn { margin: 0 8px; }
+  @media print {
+    .no-print { display: none; }
+    body { padding: 0; background: #fff; }
+    .recu-page { box-shadow: none; border: none; background: #fff; color: #111; }
+    .recu-head p, table.recu-table td:first-child, .recu-foot { color: #555; }
+    .recu-numero { background: #eee; color: #111; }
+    table.recu-table td { border-bottom-color: #ddd; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <button class="btn btn-primary" onclick="window.print()">Imprimer</button>
+  <a id="recu-whatsapp" class="btn btn-success" href="#" target="_blank" rel="noopener" style="display:none; text-decoration:none;">Recevoir sur WhatsApp</a>
+  <button class="btn btn-outline" onclick="window.close()">Fermer</button>
+</div>
+
+<div class="recu-page" id="recu-page">
+  <div class="recu-head">
+    <img id="recu-logo" src="" alt="Fenemof" style="height:60px; display:none; margin-bottom:8px;">
+    <h1 class="brand-name">FENEMOF</h1>
+    <p id="recu-coord">Congo Brazzaville, Massengo - Église Catholique</p>
+    <p id="recu-contact"></p>
+    <div class="recu-numero">Reçu N° <span id="recu-numero">---</span></div>
+  </div>
+
+  <h2 class="recu-title">Reçu d'inscription</h2>
+  <table class="recu-table" id="recu-table"></table>
+
+  <div class="recu-foot">
+    <p>Ce reçu est généré automatiquement par Fenemof. Conservez-le précieusement.</p>
+    <p>Pour toute question : <span id="recu-contact2"></span></p>
+  </div>
+</div>
+
+<script src="recu.js"></script>
+</body>
+</html>

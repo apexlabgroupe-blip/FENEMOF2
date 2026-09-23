@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" role="img" aria-label="Carte du Congo Brazzaville">
+  <defs>
+    <linearGradient id="cgTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fb0ff"/>
+      <stop offset="0.55" stop-color="#1f7ae0"/>
+      <stop offset="1" stop-color="#0d3f7a"/>
+    </linearGradient>
+    <linearGradient id="cgSheen" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <path id="cgShape" d="M150,18 L196,44 L232,86 L252,132 L238,186 L226,232 L204,278 L188,318 L172,352 L158,384 L142,360 L128,322 L112,286 L96,250 L82,214 L66,176 L58,136 L70,98 L92,62 Z"/>
+  </defs>
+
+  <!-- extrusion 3D -->
+  <g fill="#041a33">
+    <use href="#cgShape" transform="translate(14,30)"/>
+    <use href="#cgShape" transform="translate(11,24)" fill-opacity="0.95"/>
+    <use href="#cgShape" transform="translate(8,18)" fill-opacity="0.9"/>
+    <use href="#cgShape" transform="translate(5,12)" fill-opacity="0.85"/>
+    <use href="#cgShape" transform="translate(2,6)" fill-opacity="0.8"/>
+  </g>
+
+  <!-- face principale -->
+  <use href="#cgShape" fill="url(#cgTop)" stroke="#eaf3ff" stroke-width="7" stroke-linejoin="round"/>
+  <use href="#cgShape" fill="url(#cgSheen)"/>
+
+  <!-- etoile -->
+  <path d="M150,120 l10.5,21.5 23.7,3.4 -17.1,16.7 4,23.6 -21.1,-11.1 -21.1,11.1 4,-23.6 -17.1,-16.7 23.7,-3.4 Z"
+        fill="#ffffff" opacity="0.92"/>
+</svg>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "d0dc1498-09cc-44e9-b66c-994e6042c943",
+    "date": "2026-08-26 17:51:23",
+    "type": "Paiement",
+    "detail": "Inscription validée : Test"
+  },
+  {
+    "id": "7998e434-04af-41f7-9165-80415bcdb1f7",
+    "date": "2026-08-26 17:32:43",
+    "type": "Inscription",
+    "detail": "Etablissement 'sedec mpiba' - sections college - 3 eleve(s)"
+  },
+  {
+    "id": "1fc02256-f8b4-4cfe-bbf1-ded73011539c",
+    "date": "2026-08-26 17:31:38",
+    "type": "Inscription",
+    "detail": "Etablissement 'sedec mpiba' - sections primaire - 3 eleve(s)"
+  },
+  {
+    "id": "ed9e0c9b-3d98-496c-af8c-add64bad3449",
+    "date": "2026-08-26 17:27:04",
+    "type": "Inscription",
+    "detail": "Etablissement 'TestCollege' - sections primaire, college - 6 eleve(s)"
+  },
+  {
+    "id": "dbc6200c-fa8d-4c4b-a8ff-73f9550db16e",
+    "date": "2026-08-26 16:44:04",
+    "type": "Inscription",
+    "detail": "Etablissement 'Test' - sections primaire - 1 eleve(s)"
+  },
+  {
+    "id": "c71ea3e6-5267-4284-a6d5-de912f0ca30f",
+    "date": "2026-08-26 16:32:02",
+    "type": "Inscription",
+    "detail": "Etablissement 'Test' - sections primaire, college - 2 eleve(s)"
+  },
+  {
+    "id": "00d58e0d-e10f-44da-b1e4-2591272b3162",
+    "date": "2026-08-26 16:09:35",
+    "type": "Inscription Cosudo",
+    "detail": "sedec mpiba - BRAZZAVILLE - terminale (061916889)"
+  },
+  {
+    "id": "ad7aa3fd-901e-42b2-8383-2d0566566987",
+    "date": "2026-08-26 16:07:47",
+    "type": "Inscription Cosudo",
+    "detail": "User Test - Brazzaville - 4eme (0612345678)"
+  }
+]

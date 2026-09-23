@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fenemof - Congo Brazzaville</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== BARRE D'ANNONCES ===== -->
+<div id="annonce-bar" class="annonce-bar hidden"></div>
+
+<!-- ===== EN-TÊTE ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand">
+      <img id="site-logo" src="" alt="Logo Fenemof" class="brand-logo hidden">
+      <span class="brand-name">FENEMOF</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#but">Notre but</a>
+      <a href="#sections">Sections</a>
+      <a href="#inscription">Inscription Fenemof</a>
+      <a href="#inscription-cosudo">Inscription Cosudo</a>
+      <a href="#paiement">Paiement</a>
+      <a href="#meilleur-eleve">Meilleur élève</a>
+      <a href="#partenaires">Partenaires</a>
+      <a href="#editions">Éditions</a>
+      <a href="#devenir-partenaire">Devenir partenaire</a>
+      <a href="#contact">Contact</a>
+      <a href="/createur" class="nav-createur">Espace Créateur</a>
+    </nav>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- ===== ACCUEIL ===== -->
+<section id="accueil" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Bienvenue chez <span class="accent">Fenemof</span></h1>
+      <p class="hero-sub">
+        Fédération Nationale de l'École Mère et de l'École Fille.<br>
+        <span id="hero-location">Congo Brazzaville, Massengo - Église Catholique</span>
+      </p>
+      <p class="hero-desc">
+        Nous unissons les établissements scolaires des sections primaire, collège et lycée
+        pour l'éducation et la solidarité. Inscrivez votre établissement dès maintenant.
+        Avec Cosudo, les sections collège, lycée et université ont aussi leur inscription.
+      </p>
+      <div class="hero-actions">
+        <a href="#inscription" class="btn btn-primary">Inscrire mon établissement</a>
+        <a href="#inscription-cosudo" class="btn btn-outline">Inscription Cosudo</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-title">Chiffres clés</div>
+      <div class="stat-row">
+        <div class="stat"><span class="stat-num" id="stat-ecoles">0</span><span class="stat-label">Écoles inscrites</span></div>
+        <div class="stat"><span class="stat-num" id="cosudo-stat-ecoles">0</span><span class="stat-label">Inscriptions Cosudo</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Sections</span></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Modes de paiement</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUT DE FENEMOF ===== -->
+<section id="but" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Le but de Fenemof</h2>
+    <div id="but-text" class="but-box">
+      Fenemof est la Fédération Nationale de l'École Mère et de l'École Filles.
+      Elle unit les établissements scolaires pour promouvoir l'éducation et la solidarité.
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUT DE COSUDO ===== -->
+<section id="but-cosudo" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Le but de Cosudo</h2>
+    <div id="cosudo-but-text" class="but-box">
+      Cosudo est la plateforme d'inscription des sections collège, lycée et université.
+    </div>
+  </div>
+</section>
+
+<!-- ===== LE CRÉATEUR ===== -->
+<section id="createur" class="section">
+  <div class="container">
+    <h2 class="section-title">Le créateur</h2>
+    <p class="section-sub">La personne qui pilote Fenemof.</p>
+    <div id="createur-box" class="createur-box">
+      <img id="createur-photo" class="createur-photo hidden" alt="Photo du créateur">
+      <div>
+        <h3 id="createur-nom">Créateur de Fenemof</h3>
+        <p class="muted">Le créateur de Fenemof veille sur la fédération et accompagne tous les établissements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTIONS ===== -->
+<section id="sections" class="section">
+  <div class="container">
+    <h2 class="section-title">Nos sections</h2>
+    <p class="section-sub">Trois sections, chacune avec ses élèves et ses informations.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-emoji">&#127891;</div>
+        <h3>Section Primaire</h3>
+        <p>Élèves du primaire. Inscrivez 3 élèves avec toutes leurs informations (nom, prénom, âge et classe).</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">&#127979;</div>
+        <h3>Section Collège</h3>
+        <p>Élèves du collège. Inscrivez 3 élèves avec toutes leurs informations (nom, prénom, âge et classe).</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">&#127963;</div>
+        <h3>Section Lycée</h3>
+        <p>Élèves du lycée. Inscrivez 3 élèves avec toutes leurs informations (nom, prénom, âge et classe).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSCRIPTION FENEMOF ===== -->
+<section id="inscription" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Inscription Fenemof</h2>
+    <p class="section-sub">Inscription Fenemof de votre établissement (sections primaire, collège et lycée). Remplissez le formulaire ci-dessous. Une inscription = un établissement + une section + ses élèves.</p>
+
+    <form id="register-form" class="form" novalidate>
+      <div class="form-block">
+        <h3 class="block-title">1. Informations de l'établissement</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="etablissement">Nom de l'établissement *</label>
+            <input type="text" id="etablissement" name="etablissement" required placeholder="Ex : Groupe Scolaire Massengo">
+          </div>
+          <div class="field">
+            <label for="section">Section *</label>
+            <select id="section" name="section" required>
+              <option value="">-- Choisir la section --</option>
+              <option value="primaire">Primaire</option>
+              <option value="college">Collège</option>
+              <option value="lycee">Lycée</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="telephone">Numéro de l'établissement *</label>
+            <input type="tel" id="telephone" name="telephone" required placeholder="Ex : 06 123 45 67">
+          </div>
+          <div class="field">
+            <label for="suivi">Numéro du personnel de suivi *</label>
+            <input type="tel" id="suivi" name="suivi" required placeholder="Ex : 06 123 45 67">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">2. Élèves de la section</h3>
+        <p class="field-hint">Trois élèves sont demandés par section. Vous pouvez en ajouter ou en retirer (de 1 à 6).</p>
+        <div id="eleves-container"></div>
+        <div class="eleves-actions">
+          <button type="button" id="btn-add-eleve" class="btn btn-small btn-outline">+ Ajouter un élève</button>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">3. Paiement de l'inscription</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label>Méthode de paiement *</label>
+            <div class="radio-group">
+              <label class="radio-card">
+                <input type="radio" name="paiement" value="MTN Money" required>
+                <span class="radio-logo mtn">MTN Money</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="paiement" value="Airtel Money" required>
+                <span class="radio-logo airtel">Airtel Money</span>
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="transaction">Votre numéro de transaction *</label>
+            <input type="text" id="transaction" name="transaction" required placeholder="Ex : 88234561">
+            <p class="field-hint">
+              Envoyez le paiement au numéro Fenemof :
+              <strong id="pay-transaction">064618646</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="form-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer mon inscription</button>
+    </form>
+
+    <div id="register-success" class="success-box hidden">
+      <h3>&#10004; Inscription enregistrée !</h3>
+      <p id="register-success-msg">Merci. Votre établissement a bien été inscrit. Le créateur de Fenemof va vous contacter.</p>
+      <div id="receipt-box" class="receipt hidden">
+        <h4>&#128424; Votre reçu</h4>
+        <table id="receipt-table" class="receipt-table"></table>
+        <div class="receipt-actions">
+          <a id="receipt-print" class="btn btn-primary" target="_blank">Imprimer / enregistrer le reçu (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSCRIPTION COSUDO ===== -->
+<section id="inscription-cosudo" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Inscription Cosudo</h2>
+    <p class="section-sub">Inscription Cosudo de votre établissement (sections collège, lycée et université). Remplissez le formulaire ci-dessous. Une inscription = un établissement + une section + ses élèves.</p>
+
+    <form id="register-cosudo-form" class="form" novalidate>
+      <div class="form-block">
+        <h3 class="block-title">1. Informations de l'établissement</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="cosudo-etablissement">Nom de l'établissement *</label>
+            <input type="text" id="cosudo-etablissement" name="cosudo-etablissement" required placeholder="Ex : Groupe Scolaire Massengo">
+          </div>
+          <div class="field">
+            <label for="cosudo-section">Section *</label>
+            <select id="cosudo-section" name="cosudo-section" required>
+              <option value="">-- Choisir la section --</option>
+              <option value="college">Collège</option>
+              <option value="lycee">Lycée</option>
+              <option value="universite">Université</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cosudo-telephone">Numéro de l'établissement *</label>
+            <input type="tel" id="cosudo-telephone" name="cosudo-telephone" required placeholder="Ex : 06 123 45 67">
+          </div>
+          <div class="field">
+            <label for="cosudo-suivi">Numéro du personnel de suivi *</label>
+            <input type="tel" id="cosudo-suivi" name="cosudo-suivi" required placeholder="Ex : 06 123 45 67">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">2. Élèves de la section</h3>
+        <p class="field-hint">Trois élèves sont demandés par section. Vous pouvez en ajouter ou en retirer (de 1 à 6).</p>
+        <div id="cosudo-eleves-container"></div>
+        <div class="eleves-actions">
+          <button type="button" id="btn-add-cosudo-eleve" class="btn btn-small btn-outline">+ Ajouter un élève</button>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">3. Paiement de l'inscription</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label>Méthode de paiement *</label>
+            <div class="radio-group">
+              <label class="radio-card">
+                <input type="radio" name="cosudo-paiement" value="MTN Money" required>
+                <span class="radio-logo mtn">MTN Money</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="cosudo-paiement" value="Airtel Money" required>
+                <span class="radio-logo airtel">Airtel Money</span>
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cosudo-transaction">Votre numéro de transaction *</label>
+            <input type="text" id="cosudo-transaction" name="cosudo-transaction" required placeholder="Ex : 88234561">
+            <p class="field-hint">
+              Envoyez le paiement au numéro Cosudo :
+              <strong id="cosudo-pay-transaction">064618646</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="cosudo-form-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer mon inscription Cosudo</button>
+    </form>
+
+    <div id="cosudo-register-success" class="success-box hidden">
+      <h3>&#10004; Inscription Cosudo enregistrée !</h3>
+      <p id="cosudo-register-success-msg">Merci. Votre établissement a bien été inscrit. Le créateur de Cosudo va vous contacter.</p>
+      <div id="cosudo-receipt-box" class="receipt hidden">
+        <h4>&#128424; Votre reçu</h4>
+        <table id="cosudo-receipt-table" class="receipt-table"></table>
+        <div class="receipt-actions">
+          <a id="cosudo-receipt-print" class="btn btn-primary" target="_blank">Imprimer / enregistrer le reçu (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAIEMENT ===== -->
+<section id="paiement" class="section">
+  <div class="container">
+    <h2 class="section-title">Comment payer ?</h2>
+    <p class="section-sub">L'inscription se règle par mobile money. Utilisez l'un des deux moyens ci-dessous.</p>
+    <div class="cards">
+      <div class="card pay-card">
+        <div class="pay-logo mtn">MTN Money</div>
+        <ol class="pay-steps">
+          <li>Composez <strong>*126#</strong> sur votre téléphone MTN.</li>
+          <li>Choisissez « Envoyer de l'argent ».</li>
+          <li>Entrez le numéro Fenemof : <strong id="pay-mtn">064618646</strong>.</li>
+          <li>Renseignez le montant de l'inscription.</li>
+          <li>Validez et notez le numéro de transaction.</li>
+        </ol>
+      </div>
+      <div class="card pay-card">
+        <div class="pay-logo airtel">Airtel Money</div>
+        <ol class="pay-steps">
+          <li>Composez <strong>*123#</strong> sur votre téléphone Airtel.</li>
+          <li>Choisissez « Envoyer de l'argent ».</li>
+          <li>Entrez le numéro Fenemof : <strong id="pay-airtel">064618646</strong>.</li>
+          <li>Renseignez le montant de l'inscription.</li>
+          <li>Validez et notez le numéro de transaction.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="center-note">
+      Montant de l'inscription : <strong id="pay-montant">2 000 FCFA</strong> par élève.
+      Contactez-nous au <strong id="pay-phone">064618646</strong> ou par e-mail <strong id="pay-email">fenemof@gmail.com</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- ===== MEILLEUR ÉLÈVE ===== -->
+<section id="meilleur-eleve" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Meilleur élève par édition</h2>
+    <p class="section-sub">Les lauréats de chaque édition de Fenemof.</p>
+    <div id="meilleurs-grid" class="meilleurs-grid">
+      <p id="meilleurs-empty">Le meilleur élève sera annoncé prochainement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉCOLES PARTICIPANTES ===== -->
+<section id="ecoles" class="section">
+  <div class="container">
+    <h2 class="section-title">Écoles participantes</h2>
+    <p class="section-sub">Les établissements qui participent aux activités de Fenemof.</p>
+    <div id="ecoles-grid" class="ecoles-grid">
+      <p id="ecoles-empty">Aucune école participante pour le moment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTENAIRES ===== -->
+<section id="partenaires" class="section">
+  <div class="container">
+    <h2 class="section-title">Nos partenaires et sponsors</h2>
+    <p class="section-sub">Ils soutiennent les actions de Fenemof.</p>
+    <div id="partners-grid" class="partners-grid">
+      <p id="partners-empty">Aucun partenaire pour le moment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉDITIONS ===== -->
+<section id="editions" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Nos éditions</h2>
+    <p class="section-sub">Les publications et documents officiels de Fenemof.</p>
+    <div id="editions-grid" class="editions-grid">
+      <p id="editions-empty">Aucune édition publiée pour le moment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIE ===== -->
+<section id="galerie" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Galerie de Fenemof</h2>
+    <p class="section-sub">Les photos des événements de Fenemof.</p>
+    <div id="galerie-grid" class="galerie-grid">
+      <p id="galerie-empty">Aucune photo pour le moment. Revenez bientôt !</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIE COSUDO ===== -->
+<section id="galerie-cosudo" class="section">
+  <div class="container">
+    <h2 class="section-title">Galerie de Cosudo</h2>
+    <p class="section-sub">Les photos des événements de Cosudo.</p>
+    <div id="cosudo-galerie-grid" class="galerie-grid">
+      <p id="cosudo-galerie-empty">Aucune photo Cosudo pour le moment. Revenez bientôt !</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEVENIR PARTENAIRE ===== -->
+<section id="devenir-partenaire" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Devenir partenaire</h2>
+    <p class="section-sub">Entreprises, organisations, parents : soutenez Fenemof et devenez partenaire.</p>
+    <form id="partner-request-form" class="form">
+      <div class="grid-2">
+        <div class="field">
+          <label for="pr-nom">Votre nom *</label>
+          <input type="text" id="pr-nom" placeholder="Votre nom" required>
+        </div>
+        <div class="field">
+          <label for="pr-org">Organisation / entreprise</label>
+          <input type="text" id="pr-org" placeholder="Nom de l'organisation">
+        </div>
+        <div class="field">
+          <label for="pr-tel">Téléphone / WhatsApp</label>
+          <input type="tel" id="pr-tel" placeholder="Votre numéro">
+        </div>
+        <div class="field">
+          <label for="pr-msg">Votre message</label>
+          <input type="text" id="pr-msg" placeholder="Pourquoi souhaitez-vous être partenaire ?">
+        </div>
+      </div>
+      <div id="pr-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer ma demande de partenariat</button>
+    </form>
+    <div id="pr-success" class="success-box hidden">
+      <h3>&#10004; Demande envoyée !</h3>
+      <p>Merci ! Le créateur de Fenemof vous contactera très vite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="cards">
+      <div class="card contact-card">
+        <div class="card-emoji">&#128231;</div>
+        <h3>E-mail</h3>
+        <p id="contact-email">fenemof@gmail.com</p>
+      </div>
+      <div class="card contact-card">
+        <div class="card-emoji">&#128222;</div>
+        <h3>Téléphone</h3>
+        <p id="contact-phone">064618646</p>
+      </div>
+      <div class="card contact-card">
+        <div class="card-emoji">&#128205;</div>
+        <h3>Localisation</h3>
+        <p id="contact-location">Congo Brazzaville, Massengo - Église Catholique</p>
+      </div>
+      <div class="card contact-card">
+        <div class="card-emoji">&#128172;</div>
+        <h3>WhatsApp</h3>
+        <p id="contact-whatsapp">064618646</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="footer-year"></span> FENEMOF - Fédération Nationale de l'École Mère et de l'École Fille. Tous droits réservés.</p>
+    <p><a href="/createur">Espace Créateur</a></p>
+  </div>
+</footer>
+
+<div id="toast" class="toast hidden"></div>
+
+<!-- ===== BOUTON WHATSAPP FLOTTANT ===== -->
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/242064618646" target="_blank" rel="noopener" title="Écrire sur WhatsApp">
+  <span class="whatsapp-icon">&#128172;</span>
+</a>
+
+<!-- ===== ASSISTANT IA FLOTTANT ===== -->
+<div id="chat-widget" class="chat-widget">
+  <button id="chat-toggle" class="chat-toggle" aria-label="Assistant Fenemof">
+    <span class="chat-toggle-icon">&#129302;</span>
+    <span class="chat-toggle-text">Assistant</span>
+  </button>
+  <div id="chat-panel" class="chat-panel hidden">
+    <div class="chat-head">
+      <div>
+        <strong>Assistant Fenemof</strong>
+        <div class="chat-status">&#9679; En ligne — répond à vos questions</div>
+      </div>
+      <button id="chat-close" class="chat-close" aria-label="Fermer">&times;</button>
+    </div>
+    <div id="chat-body" class="chat-body"></div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="chat-input" placeholder="Posez votre question..." autocomplete="off">
+      <button type="submit" class="chat-send">Envoyer</button>
+    </form>
+    <div class="chat-foot">Assistant automatique de Fenemof</div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>

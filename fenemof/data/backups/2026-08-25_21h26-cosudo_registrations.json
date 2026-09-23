@@ -1,0 +1,28 @@
+[
+  {
+    "id": "da95fdc0-f2ee-465d-b01d-1cc325e99332",
+    "date": "2026-08-25 13:19:09",
+    "etablissement": "BBN MPIBA",
+    "telephone": "061916889",
+    "suivi": "",
+    "section": "lycee",
+    "sections": [
+      "lycee"
+    ],
+    "nom": "MPIBA",
+    "prenom": "BBN",
+    "paiement": "En ligne (Yelen)",
+    "transaction": "",
+    "eleves": [
+      {
+        "nom": "MPIBA",
+        "prenom": "BBN",
+        "age": "16",
+        "classe": "1ère",
+        "sexe": "masculin",
+        "section": "lycee"
+      }
+    ],
+    "statut": "en attente"
+  }
+]

@@ -1,0 +1,67 @@
+/* ============================================================
+   COSUDO — thème distinct (violet / rose) pour cosudo.html
+   Hérite de style.css : on ne redéfinit que les couleurs et
+   quelques blocs propres à Cosudo.
+   ============================================================ */
+
+body.cosudo-theme {
+  --green: #1f7ae0;
+  --green-dark: #123c6b;
+  --green-light: rgba(31, 122, 224, 0.12);
+  --gold: #1f7ae0;
+  --gold-dark: #123c6b;
+  --gold-light: #cfe4ff;
+  --paper: #0b0b0b;
+  --ink: #f5efdd;
+}
+
+/* ---- Hero Cosudo : dégradé violet/rose, sans photo ---- */
+.cosudo-hero {
+  background: linear-gradient(150deg, #000000 0%, #141005 55%, #241c07 100%);
+}
+.cosudo-hero .accent { color: var(--gold-light); }
+
+/* ---- Pastilles des conditions d'accès ---- */
+.cond-chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 22px 0 26px;
+}
+.cond-chip {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  backdrop-filter: blur(2px);
+}
+
+/* ---- Header : logo un peu plus visible ---- */
+.cosudo-theme .brand-logo { border-radius: 10px; }
+
+/* ---- Badge section en violet ---- */
+.cosudo-theme .badge-section { color: var(--green-dark); }
+.cosudo-theme .badge-ribbon {
+  background: linear-gradient(90deg, var(--green), var(--gold));
+}
+
+/* ---- Bouton secondaire clair sur le hero ---- */
+.cosudo-theme .btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+.cosudo-theme .btn-outline-light:hover {
+  background: #fff;
+  color: var(--green-dark);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 720px) {
+  .cond-chips { gap: 8px; }
+  .cond-chip { font-size: 0.85rem; padding: 7px 12px; }
+  .cosudo-theme .main-nav { display: none; }
+}

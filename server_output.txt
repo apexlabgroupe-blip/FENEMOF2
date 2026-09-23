@@ -1,0 +1,27 @@
+============================================================
+  FENEMOF - Site web sécurisé (SQLite) démarré
+  Ouvrez le site : http://localhost:8000
+  Espace créateur : http://localhost:8000/createur
+  Appuyez sur Ctrl+C pour arrêter.
+============================================================
+[09:44:40] "GET / HTTP/1.1" 200 -
+[09:45:59] "GET / HTTP/1.1" 200 -
+[09:46:44] "GET / HTTP/1.1" 200 -
+[09:46:44] "GET /style.css HTTP/1.1" 200 -
+[09:46:45] "GET /accueil-fond.jpg HTTP/1.1" 200 -
+[09:46:45] "GET /app.js HTTP/1.1" 200 -
+[09:46:46] code 404, message Fichier introuvable
+[09:46:46] "GET /favicon.ico HTTP/1.1" 404 -
+[09:46:46] "GET /api/siteinfo HTTP/1.1" 200 -
+[09:46:52] "GET / HTTP/1.1" 200 -
+[09:46:52] "GET /style.css HTTP/1.1" 200 -
+[09:46:53] "GET /app.js HTTP/1.1" 200 -
+[09:46:53] "GET /accueil-fond.jpg HTTP/1.1" 200 -
+[09:46:53] "GET /api/siteinfo HTTP/1.1" 200 -
+[09:46:53] "GET /uploads/cosudo/cosudo_20260823100217_eca18c.jpeg HTTP/1.1" 200 -
+[09:53:33] "GET / HTTP/1.1" 200 -
+[09:53:33] "GET /style.css HTTP/1.1" 200 -
+[09:53:33] "GET /app.js HTTP/1.1" 200 -
+[09:53:33] "GET /accueil-fond.jpg HTTP/1.1" 200 -
+[09:53:33] "GET /api/siteinfo HTTP/1.1" 200 -
+[09:53:34] "GET /uploads/cosudo/cosudo_20260823100217_eca18c.jpeg HTTP/1.1" 200 -

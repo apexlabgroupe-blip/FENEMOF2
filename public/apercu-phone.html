@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apercu Phone — Fenemof</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: linear-gradient(160deg, #0a0e16, #05070c);
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.sub { color: #8fa3bd; font-size: 0.85rem; margin-bottom: 20px; text-align: center; }
+.phone-scroller {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 12px;
+}
+.phone {
+  flex: 0 0 auto;
+  width: 390px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 42px;
+  padding: 12px;
+  box-shadow:
+    0 0 0 4px #222,
+    0 0 0 6px #3a3a3a,
+    0 30px 60px rgba(0,0,0,0.7);
+  position: relative;
+}
+.notch {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 26px;
+  background: #000;
+  border-radius: 20px;
+  z-index: 999;
+}
+.phone-screen {
+  width: 100%;
+  height: 780px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  background: #06090f;
+}
+.phone-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+.toolbar a, .toolbar button {
+  background: rgba(31,122,224,0.15);
+  border: 1px solid rgba(31,122,224,0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.toolbar a:hover, .toolbar button:hover { background: rgba(31,122,224,0.35); }
+.note {
+  margin-top: 18px;
+  color: #5b6b80;
+  font-size: 0.75rem;
+  text-align: center;
+  max-width: 420px;
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+  <h1>Apercu en format telephone</h1>
+  <p class="sub">Voici la page d'accueil de Fenemof comme elle apparait sur un telephone (390px).</p>
+
+  <div class="phone-scroller">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="phone-screen">
+        <iframe id="phone-frame" src="/" title="Fenemof mobile"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <button onclick="gate()">Voir la page d'accueil</button>
+    <button onclick="refresh()">Rafraichir</button>
+  </div>
+
+  <p class="note">
+    Pour le veritable test sur votre telephone : connectez ce PC et le telephone au meme reseau Wi-Fi,
+    puis ouvrez sur le telephone : <strong>http://192.168.1.80:8000</strong>.<br>
+    L'apercu ci-dessus utilise un cadre de 390px (largeur d'un smartphone classique).
+  </p>
+
+<script>
+function refresh() {
+  var f = document.getElementById("phone-frame");
+  f.src = f.src;
+}
+function gate() {
+  var f = document.getElementById("phone-frame");
+  f.src = "/";
+}
+</script>
+</body>
+</html>

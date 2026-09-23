@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badge — Fenemof</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2306090f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-weight='bold' font-size='36' fill='%231f7ae0' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.badge-hero { text-align:center; padding:60px 20px 30px; }
+.badge-hero h1 { color:#fff; font-size:1.8rem; margin-bottom:10px; }
+.badge-hero p { color:#999; font-size:1rem; }
+.badge-card {
+  background:var(--dark); border:2px solid var(--blue-strong);
+  border-radius:var(--radius); padding:40px 30px;
+  max-width:480px; margin:0 auto 40px; text-align:center;
+}
+.badge-card h3 { color:#fff; margin-bottom:16px; }
+.badge-inputs { display:flex; flex-direction:column; gap:12px; margin-bottom:20px; }
+.badge-inputs input, .badge-inputs select {
+  width:100%; padding:12px 16px;
+  border:1.5px solid rgba(255,255,255,0.1); border-radius:10px;
+  font-size:1rem; background:var(--dark-2); color:#fff;
+  font-family:inherit;
+}
+.badge-inputs input:focus, .badge-inputs select:focus { outline:none; border-color:var(--blue-strong); }
+.badge-inputs select option { background:var(--dark); color:#fff; }
+.badge-error { color:#ff4444; font-size:0.9rem; margin-bottom:12px; display:none; }
+.badge-error.show { display:block; }
+.badge-result {
+  display:none; background:var(--dark); border:2px solid #25d366;
+  border-radius:var(--radius); padding:30px; max-width:480px; margin:0 auto 40px;
+  text-align:center; color:#fff;
+}
+.badge-result.show { display:block; }
+.badge-result h3 { color:#25d366; margin-bottom:12px; font-size:1.3rem; }
+.badge-result p { margin-bottom:8px; color:#ccc; font-size:0.95rem; }
+.badge-result strong { color:#fff; }
+.badge-result .badge-eleves { margin-top:16px; text-align:left; }
+.badge-result .badge-eleves h4 { color:var(--blue-glow); margin-bottom:8px; font-size:0.95rem; }
+.badge-result .badge-eleve {
+  background:var(--dark-2); border-radius:8px; padding:10px 14px; margin-bottom:6px;
+  display:flex; justify-content:space-between; align-items:center; font-size:0.9rem;
+}
+.badge-result .badge-eleve span { color:var(--gray); }
+.badge-result .badge-cosudo-info { text-align:left; }
+.badge-result .badge-cosudo-info p { margin-bottom:6px; }
+.badge-result { max-width: 760px; }
+.badge-ecole-head { text-align:center; margin-bottom:20px; }
+.badge-ecole-head h3 { color:#fff; font-size:1.4rem; }
+.badge-ecole-head p { color:#ccc; font-size:0.95rem; margin-top:6px; }
+.badge-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:16px; margin-top:8px; text-align:left;
+}
+.badge-card-eleve {
+  background:var(--dark-2); border:1.5px solid var(--blue-strong);
+  border-radius:var(--radius); overflow:hidden;
+  display:flex; flex-direction:column;
+}
+.badge-card-head { padding:12px 14px; border-bottom:1px solid rgba(255,255,255,0.06); }
+.badge-card-title { color:#fff; font-weight:800; font-size:1.05rem; }
+.badge-card-sub { color:var(--gray); font-size:0.78rem; margin-top:2px; }
+.badge-card-body { padding:14px; display:flex; flex-direction:column; align-items:center; gap:12px; flex:1; }
+.badge-photo {
+  width:84px; height:84px; border-radius:50%; object-fit:cover;
+  border:2px solid var(--blue-strong);
+}
+.badge-photo-empty {
+  display:flex; align-items:center; justify-content:center;
+  background:var(--dark); color:var(--blue-glow); font-size:2rem; font-weight:900;
+}
+.badge-card-lines { width:100%; display:flex; flex-direction:column; gap:6px; }
+.badge-card-line { display:flex; justify-content:space-between; font-size:0.85rem; }
+.badge-card-line span { color:var(--gray); }
+.badge-card-line strong { color:#fff; }
+.badge-card-foot {
+  padding:10px 14px; text-align:center; font-size:0.8rem; font-weight:800;
+  letter-spacing:1px; color:#25d366; border-top:1px solid rgba(255,255,255,0.06);
+}
+.muted { color:var(--gray); font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<div class="home-page" style="position:relative;">
+  <div class="badge-hero">
+    <h1>Mon <span style="color:var(--blue-glow);">Badge</span></h1>
+    <p>Entrez votre identifiant pour acceder a votre badge.</p>
+  </div>
+
+  <section class="section" style="padding:0 20px;">
+    <div class="badge-card">
+      <h3>Rechercher mon badge</h3>
+      <div class="badge-inputs">
+        <select id="badge-type">
+          <option value="fenemof">Ecole Fenemof</option>
+          <option value="cosudo">Inscrit Cosudo</option>
+        </select>
+        <input type="text" id="badge-id-fenemof" placeholder="Nom de l'etablissement">
+        <input type="text" id="badge-id-cosudo-nom" placeholder="Nom" style="display:none;">
+        <input type="text" id="badge-id-cosudo-prenom" placeholder="Prenom" style="display:none;">
+      </div>
+      <div id="badge-error" class="badge-error"></div>
+      <button id="badge-search" class="btn btn-primary btn-big" style="width:100%;">Rechercher</button>
+    </div>
+
+    <div id="badge-result" class="badge-result">
+      <h3>Badge trouve !</h3>
+      <div id="badge-result-content"></div>
+    </div>
+  </section>
+</div>
+
+<a href="/" class="whatsapp-float" style="z-index:200;background:var(--blue-strong);box-shadow:0 6px 20px rgba(13,79,191,0.4);">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+</a>
+
+<script>
+(function () {
+  var typeSelect = document.getElementById("badge-type");
+  var idFenemof = document.getElementById("badge-id-fenemof");
+  var idCosudoNom = document.getElementById("badge-id-cosudo-nom");
+  var idCosudoPrenom = document.getElementById("badge-id-cosudo-prenom");
+  var errBox = document.getElementById("badge-error");
+  var resultBox = document.getElementById("badge-result");
+  var resultContent = document.getElementById("badge-result-content");
+
+  typeSelect.addEventListener("change", function () {
+    if (typeSelect.value === "fenemof") {
+      idFenemof.style.display = "";
+      idCosudoNom.style.display = "none";
+      idCosudoPrenom.style.display = "none";
+    } else {
+      idFenemof.style.display = "none";
+      idCosudoNom.style.display = "";
+      idCosudoPrenom.style.display = "";
+    }
+    errBox.classList.remove("show");
+    resultBox.classList.remove("show");
+  });
+
+  document.getElementById("badge-search").addEventListener("click", function () {
+    errBox.classList.remove("show");
+    resultBox.classList.remove("show");
+    var type = typeSelect.value;
+    var url;
+    if (type === "fenemof") {
+      var nom = idFenemof.value.trim();
+      if (!nom) { showError("Entrez le nom de l'etablissement."); return; }
+      url = "/api/badge-check?type=fenemof&id=" + encodeURIComponent(nom);
+    } else {
+      var nom2 = idCosudoNom.value.trim();
+      var prenom = idCosudoPrenom.value.trim();
+      if (!nom2 || !prenom) { showError("Entrez le nom et le prenom."); return; }
+      url = "/api/badge-check?type=cosudo&nom=" + encodeURIComponent(nom2) + "&prenom=" + encodeURIComponent(prenom);
+    }
+    fetch(url)
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.error) { showError(data.error); return; }
+        showBadge(data);
+      })
+      .catch(function () { showError("Serveur indisponible."); });
+  });
+
+  function showError(msg) { errBox.textContent = msg; errBox.classList.add("show"); }
+
+  function fullName(e) { return ((e.prenom || "") + " " + (e.nom || "")).trim(); }
+
+  function badgeCard(title, subtitle, photoUrl, kbadge, lines) {
+    var card = document.createElement("div");
+    card.className = "badge-card-eleve";
+    var head = document.createElement("div");
+    head.className = "badge-card-head";
+    var t = document.createElement("div");
+    t.className = "badge-card-title";
+    t.textContent = title;
+    head.appendChild(t);
+    if (subtitle) {
+      var s = document.createElement("div");
+      s.className = "badge-card-sub";
+      s.textContent = subtitle;
+      head.appendChild(s);
+    }
+    card.appendChild(head);
+    var body = document.createElement("div");
+    body.className = "badge-card-body";
+    if (photoUrl) {
+      var img = document.createElement("img");
+      img.src = photoUrl;
+      img.className = "badge-photo";
+      img.alt = "Photo";
+      img.onerror = function () { img.style.display = "none"; };
+      body.appendChild(img);
+    } else {
+      var ph = document.createElement("div");
+      ph.className = "badge-photo badge-photo-empty";
+      ph.textContent = (title || "?").charAt(0).toUpperCase();
+      body.appendChild(ph);
+    }
+    var ul = document.createElement("div");
+    ul.className = "badge-card-lines";
+    lines.forEach(function (ln) {
+      var row = document.createElement("div");
+      row.className = "badge-card-line";
+      var k = document.createElement("span");
+      k.textContent = ln.k;
+      var v = document.createElement("strong");
+      v.textContent = ln.v;
+      row.appendChild(k);
+      row.appendChild(v);
+      ul.appendChild(row);
+    });
+    body.appendChild(ul);
+    card.appendChild(body);
+    var foot = document.createElement("div");
+    foot.className = "badge-card-foot";
+    foot.textContent = kbadge;
+    card.appendChild(foot);
+    return card;
+  }
+
+  function showBadge(data) {
+    resultContent.innerHTML = "";
+    if (data.type === "fenemof") {
+      var ec = document.createElement("div");
+      ec.className = "badge-ecole-head";
+      var h = document.createElement("h3");
+      h.textContent = "Ecole " + (data.etablissement || "");
+      var pl = document.createElement("p");
+      pl.innerHTML = "<span style='color:#25d366;'>PAYE</span> &bull; " + (data.nb_eleves || 0) + " eleve(s)";
+      ec.appendChild(h);
+      ec.appendChild(pl);
+      resultContent.appendChild(ec);
+      var grid = document.createElement("div");
+      grid.className = "badge-grid";
+      var sections = Object.keys(data.eleves || {});
+      var added = 0;
+      sections.forEach(function (sec) {
+        (data.eleves[sec] || []).forEach(function (e) {
+          grid.appendChild(badgeCard(
+            fullName(e) || "Eleve",
+            sec + " - " + (e.classe || ""),
+            e.photo_url || null,
+            "Fenemof",
+            [
+              { k: "Classe", v: e.classe || "-" },
+              { k: "Age", v: e.age || "-" },
+              { k: "Sexe", v: e.sexe || "-" }
+            ]
+          ));
+          added++;
+        });
+      });
+      if (!added) {
+        var mv = document.createElement("p");
+        mv.className = "muted";
+        mv.textContent = "Aucun eleve enregistre.";
+        grid.appendChild(mv);
+      }
+      resultContent.appendChild(grid);
+    } else {
+      var cpn = ((data.prenom || "") + " " + (data.nom || "")).trim() || "Membre Cosudo";
+      resultContent.appendChild(badgeCard(cpn, "Cosudo", data.photo_url || null, "Cosudo", [
+        { k: "Telephone", v: data.telephone || "-" },
+        { k: "Ville", v: data.ville || "-" },
+        { k: "Section", v: data.section || data.niveau || "-" },
+        { k: "Classe", v: data.classe || data.niveau || "-" },
+        { k: "Sexe", v: data.sexe || "-" },
+        { k: "Age", v: data.age || "-" }
+      ]));
+    }
+    resultBox.classList.add("show");
+  }
+
+  function esc(s) { var d = document.createElement("div"); d.textContent = s || ""; return d.innerHTML; }
+})();
+</script>
+
+</body>
+</html>

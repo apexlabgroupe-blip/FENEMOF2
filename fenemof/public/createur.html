@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace Créateur - Fenemof</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="creator.css">
+</head>
+<body class="creator-body">
+
+<!-- ===== ÉCRAN DE CONNEXION ===== -->
+<div id="login-screen" class="login-screen">
+  <div class="login-card">
+    <h1 class="brand-name center">FENEMOF</h1>
+    <p class="login-sub">Espace Créateur - Connexion</p>
+    <div id="login-error" class="form-error hidden"></div>
+    <form id="login-form">
+      <div class="field">
+        <label for="login-password">Mot de passe créateur</label>
+        <div class="password-wrap">
+          <input type="password" id="login-password" placeholder="Mot de passe" required>
+          <button type="button" id="toggle-password" class="eye-btn" aria-label="Afficher le mot de passe">&#128065;</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-big">Se connecter</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== TABLEAU DE BORD ===== -->
+<div id="dashboard" class="hidden">
+  <header class="creator-header">
+    <div class="container creator-header-inner">
+      <h1 class="brand-name">&#128274; Espace Créateur</h1>
+      <button id="logout-btn" class="btn btn-small btn-danger">Se déconnecter</button>
+    </div>
+  </header>
+
+  <div class="container creator-layout">
+    <!-- Onglets -->
+    <aside class="creator-tabs">
+      <button class="tab-btn active" data-tab="annonces">&#128227; Annonces</button>
+      <button class="tab-btn" data-tab="etablissements">&#127891; Établissements</button>
+      <button class="tab-btn" data-tab="cosudo">&#127979; Cosudo</button>
+      <button class="tab-btn" data-tab="logo">&#128248; Logo du site</button>
+      <button class="tab-btn" data-tab="photos">&#127902; Photos d'événements</button>
+      <button class="tab-btn" data-tab="partenaires">&#129309; Partenaires</button>
+      <button class="tab-btn" data-tab="demandes">&#128236; Demandes</button>
+      <button class="tab-btn" data-tab="editions">&#128214; Éditions</button>
+      <button class="tab-btn" data-tab="photos-edition">&#127902; Photos par édition</button>
+      <button class="tab-btn" data-tab="meilleur">&#127942; Meilleur élève</button>
+      <button class="tab-btn" data-tab="ecoles">&#127979; Écoles participantes</button>
+      <button class="tab-btn" data-tab="ia">&#129302; Assistant IA</button>
+      <button class="tab-btn" data-tab="profil">&#128100; Profil créateur</button>
+      <button class="tab-btn" data-tab="but">&#127919; But & Montant</button>
+      <button class="tab-btn" data-tab="historique">&#128220; Historique</button>
+      <button class="tab-btn" data-tab="parametres">&#9881; Paramètres</button>
+    </aside>
+
+    <main class="creator-main">
+      <div id="toast" class="toast hidden"></div>
+
+      <!-- ANNONCES -->
+      <section id="tab-annonces" class="tab-panel active">
+        <h2>Annonces</h2>
+        <p class="section-sub">Envoyez une annonce qui s'affichera en haut du site.</p>
+        <form id="announce-form" class="creator-box">
+          <div class="field">
+            <label for="announce-text">Texte de l'annonce</label>
+            <textarea id="announce-text" rows="3" placeholder="Ex : La rentrée scolaire 2026 est fixée au 5 octobre." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer l'annonce</button>
+        </form>
+        <h3 class="panel-h3">Annonces publiées</h3>
+        <div id="announce-list" class="announce-list"></div>
+      </section>
+
+      <!-- ÉTABLISSEMENTS -->
+      <section id="tab-etablissements" class="tab-panel">
+        <div class="panel-head">
+          <h2>Établissements inscrits</h2>
+          <button id="download-csv" class="btn btn-primary btn-small">&#8681; Télécharger la liste (CSV)</button>
+        </div>
+        <div id="reg-count" class="count-badge"></div>
+        <div id="reg-list" class="reg-list"></div>
+      </section>
+
+      <!-- COSUDO -->
+      <section id="tab-cosudo" class="tab-panel">
+        <h2>Espace Cosudo</h2>
+        <p class="section-sub">Les inscriptions Cosudo (sections collège, lycée et université), la configuration et la galerie Cosudo.</p>
+
+        <div class="creator-box">
+          <h3 class="panel-h3">Définir Cosudo</h3>
+          <p class="section-sub">Modifiez le nom, le but, le montant et le numéro de transaction de Cosudo.</p>
+          <form id="cosudo-config-form">
+            <div class="grid-2">
+              <div class="field">
+                <label for="cosudo-config-nom">Nom de Cosudo</label>
+                <input type="text" id="cosudo-config-nom" placeholder="Ex : Cosudo">
+              </div>
+              <div class="field">
+                <label for="cosudo-config-montant">Montant par élève (FCFA)</label>
+                <input type="number" id="cosudo-config-montant" min="0" placeholder="Ex : 1350" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cosudo-config-transaction">Numéro de transaction Cosudo</label>
+              <input type="text" id="cosudo-config-transaction" placeholder="Ex : 064618646">
+              <p class="field-hint">Le numéro où les établissements Cosudo envoient leur paiement mobile money.</p>
+            </div>
+            <div class="field">
+              <label for="cosudo-config-but">Le but de Cosudo (affiché sur la page d'accueil)</label>
+              <textarea id="cosudo-config-but" rows="3" placeholder="Décrivez Cosudo..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer Cosudo</button>
+          </form>
+        </div>
+
+        <div class="creator-box">
+          <h3 class="panel-h3">Inscriptions Cosudo</h3>
+          <div class="panel-head">
+            <button id="download-cosudo-csv" class="btn btn-primary btn-small">&#8681; Télécharger la liste Cosudo (CSV)</button>
+          </div>
+          <div id="cosudo-reg-count" class="count-badge"></div>
+          <div id="cosudo-reg-list" class="reg-list"></div>
+        </div>
+
+        <div class="creator-box">
+          <h3 class="panel-h3">Galerie Cosudo</h3>
+          <p class="section-sub">Ces photos apparaîtront dans la galerie Cosudo de la page d'accueil.</p>
+          <form id="cosudo-photo-form">
+            <div class="field">
+              <label for="cosudo-photo-files">Choisir une ou plusieurs images</label>
+              <input type="file" id="cosudo-photo-files" accept="image/*" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary">Publier les photos Cosudo</button>
+          </form>
+          <h3 class="panel-h3">Photos Cosudo publiées</h3>
+          <div id="cosudo-photo-list" class="creator-gallery"></div>
+        </div>
+      </section>
+
+      <!-- LOGO -->
+      <section id="tab-logo" class="tab-panel">
+        <h2>Logo du site</h2>
+        <p class="section-sub">Remplacez le logo actuel de Fenemof par une image de votre choix.</p>
+        <div class="creator-box">
+          <div class="logo-preview">
+            <p>Logo actuel :</p>
+            <img id="current-logo" alt="Logo actuel">
+            <p class="muted">Aucun logo chargé (le nom FENEMOF est affiché).</p>
+          </div>
+          <form id="logo-form">
+            <div class="field">
+              <label for="logo-file">Choisir une image (jpg, png, gif, webp, svg - max 5 Mo)</label>
+              <input type="file" id="logo-file" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Mettre à jour le logo</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- PHOTOS -->
+      <section id="tab-photos" class="tab-panel">
+        <h2>Photos d'événements</h2>
+        <p class="section-sub">Ces photos apparaîtront dans la galerie publique du site.</p>
+        <form id="photo-form" class="creator-box">
+          <div class="field">
+            <label for="photo-files">Choisir une ou plusieurs images</label>
+            <input type="file" id="photo-files" accept="image/*" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">Publier les photos</button>
+        </form>
+        <h3 class="panel-h3">Photos publiées</h3>
+        <div id="photo-list" class="creator-gallery"></div>
+      </section>
+
+      <!-- PARTENAIRES -->
+      <section id="tab-partenaires" class="tab-panel">
+        <h2>Partenaires et sponsors</h2>
+        <p class="section-sub">Ces partenaires apparaîtront sur la page d'accueil du site.</p>
+        <form id="partner-form" class="creator-box">
+          <div class="grid-2">
+            <div class="field">
+              <label for="partner-nom">Nom du partenaire / sponsor *</label>
+              <input type="text" id="partner-nom" placeholder="Ex : MTN Congo" required>
+            </div>
+            <div class="field">
+              <label for="partner-logo">Logo du partenaire (image, optionnel)</label>
+              <input type="file" id="partner-logo" accept="image/*">
+            </div>
+          </div>
+          <div class="field">
+            <label for="partner-desc">Description (optionnel)</label>
+            <input type="text" id="partner-desc" placeholder="Ex : Partenaire officiel de Fenemof">
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter le partenaire</button>
+        </form>
+        <h3 class="panel-h3">Partenaires publiés</h3>
+        <div id="partner-list" class="announce-list"></div>
+      </section>
+
+      <!-- ÉDITIONS -->
+      <section id="tab-editions" class="tab-panel">
+        <h2>Éditions</h2>
+        <p class="section-sub">Publiez une édition de l'année avec sa photo de couverture et son document (optionnel).</p>
+        <div class="creator-box">
+          <h3 class="panel-h3">Nouvelle édition</h3>
+          <form id="edition-form">
+            <div class="grid-2">
+              <div class="field">
+                <label for="edition-titre">Titre de l'édition *</label>
+                <input type="text" id="edition-titre" placeholder="Ex : Édition 2026 - La rentrée" required>
+              </div>
+              <div class="field">
+                <label for="edition-annee">Année de l'édition</label>
+                <input type="text" id="edition-annee" placeholder="Ex : 2026">
+                <p class="field-hint">Si vide, l'année actuelle du site est utilisée.</p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="edition-desc">Description</label>
+              <textarea id="edition-desc" rows="2" placeholder="Petite description de l'édition"></textarea>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="edition-photo">Photo de couverture * (image)</label>
+                <input type="file" id="edition-photo" accept="image/*" required>
+              </div>
+              <div class="field">
+                <label for="edition-fichier">Document de l'édition (PDF, optionnel)</label>
+                <input type="file" id="edition-fichier" accept=".pdf,.doc,.docx,.pptx,.xlsx">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Publier l'édition</button>
+          </form>
+        </div>
+        <h3 class="panel-h3">Éditions publiées</h3>
+        <div id="edition-list" class="announce-list"></div>
+      </section>
+
+      <!-- PHOTOS PAR ÉDITION -->
+      <section id="tab-photos-edition" class="tab-panel">
+        <h2>Photos par édition</h2>
+        <p class="section-sub">Ajoutez des photos supplémentaires à l'édition d'une année.</p>
+        <form id="edition-photo-form" class="creator-box">
+          <div class="grid-2">
+            <div class="field">
+              <label for="ed-photo-annee">Année de l'édition *</label>
+              <input type="text" id="ed-photo-annee" placeholder="Ex : 2026" required>
+            </div>
+            <div class="field">
+              <label for="ed-photo-files">Photos à ajouter (une ou plusieurs)</label>
+              <input type="file" id="ed-photo-files" accept="image/*" multiple required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter les photos à l'édition</button>
+        </form>
+        <h3 class="panel-h3">Photos des éditions (cliquer pour supprimer)</h3>
+        <div id="edition-photo-list" class="creator-gallery"></div>
+      </section>
+
+      <!-- MEILLEUR ÉLÈVE -->
+      <section id="tab-meilleur" class="tab-panel">
+        <h2>Meilleur élève par édition</h2>
+        <p class="section-sub">Annoncez le meilleur élève de chaque édition (visible sur la page d'accueil).</p>
+        <form id="meilleur-form" class="creator-box">
+          <div class="grid-2">
+            <div class="field">
+              <label for="m-nom">Nom de l'élève *</label>
+              <input type="text" id="m-nom" placeholder="Nom" required>
+            </div>
+            <div class="field">
+              <label for="m-prenom">Prénom de l'élève *</label>
+              <input type="text" id="m-prenom" placeholder="Prénom" required>
+            </div>
+            <div class="field">
+              <label for="m-age">Âge</label>
+              <input type="number" id="m-age" min="3" max="60" placeholder="Âge">
+            </div>
+            <div class="field">
+              <label for="m-classe">Classe</label>
+              <input type="text" id="m-classe" placeholder="Ex : Terminale">
+            </div>
+            <div class="field">
+              <label for="m-ecole">École</label>
+              <input type="text" id="m-ecole" placeholder="Nom de l'école">
+            </div>
+            <div class="field">
+              <label for="m-annee">Année de l'édition</label>
+              <input type="text" id="m-annee" placeholder="Ex : 2026">
+            </div>
+          </div>
+          <div class="field">
+            <label for="m-photo">Photo de l'élève (optionnel)</label>
+            <input type="file" id="m-photo" accept="image/*">
+          </div>
+          <button type="submit" class="btn btn-primary">Publier le meilleur élève</button>
+        </form>
+        <h3 class="panel-h3">Meilleurs élèves publiés</h3>
+        <div id="meilleur-list" class="announce-list"></div>
+      </section>
+
+      <!-- ÉCOLES PARTICIPANTES -->
+      <section id="tab-ecoles" class="tab-panel">
+        <h2>Écoles participantes</h2>
+        <p class="section-sub">Liste des écoles participantes affichée sur la page d'accueil.</p>
+        <form id="ecole-form" class="creator-box">
+          <div class="grid-2">
+            <div class="field">
+              <label for="ecole-nom">Nom de l'école *</label>
+              <input type="text" id="ecole-nom" placeholder="Ex : Groupe Scolaire Massengo" required>
+            </div>
+            <div class="field">
+              <label for="ecole-section">Section</label>
+              <select id="ecole-section">
+                <option value="">-- Choisir --</option>
+                <option value="primaire">Primaire</option>
+                <option value="college">Collège</option>
+                <option value="lycee">Lycée</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter l'école</button>
+        </form>
+        <h3 class="panel-h3">Écoles enregistrées</h3>
+        <div id="ecole-list" class="announce-list"></div>
+      </section>
+
+      <!-- DEMANDES DE PARTENARIAT -->
+      <section id="tab-demandes" class="tab-panel">
+        <h2>Demandes de partenariat</h2>
+        <p class="section-sub">Les demandes envoyées depuis la page d'accueil.</p>
+        <div id="request-list" class="announce-list"></div>
+      </section>
+
+      <!-- ASSISTANT IA -->
+      <section id="tab-ia" class="tab-panel">
+        <h2>Assistant IA</h2>
+        <p class="section-sub">Ajoutez vos propres questions/réponses que l'assistant utilisera en plus des siennes.</p>
+        <form id="faq-form" class="creator-box">
+          <div class="field">
+            <label for="faq-question">Question</label>
+            <input type="text" id="faq-question" placeholder="Ex : Comment obtenir le reçu ?" required>
+          </div>
+          <div class="field">
+            <label for="faq-reponse">Réponse de l'assistant</label>
+            <textarea id="faq-reponse" rows="3" placeholder="La réponse donnée à la question" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter à l'assistant</button>
+        </form>
+        <h3 class="panel-h3">Questions personnalisées</h3>
+        <div id="faq-list" class="announce-list"></div>
+      </section>
+
+      <!-- PROFIL CRÉATEUR -->
+      <section id="tab-profil" class="tab-panel">
+        <h2>Profil du créateur</h2>
+        <p class="section-sub">Votre photo, votre nom et votre prénom seront affichés sur la page d'accueil.</p>
+        <form id="profil-form" class="creator-box">
+          <div class="logo-preview">
+            <p>Votre photo actuelle :</p>
+            <img id="profil-photo-preview" alt="Votre photo" class="profil-photo-preview">
+            <p class="muted" id="profil-photo-empty">Aucune photo.</p>
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label for="profil-nom">Votre nom</label>
+              <input type="text" id="profil-nom" placeholder="Nom">
+            </div>
+            <div class="field">
+              <label for="profil-prenom">Votre prénom</label>
+              <input type="text" id="profil-prenom" placeholder="Prénom">
+            </div>
+          </div>
+          <div class="field">
+            <label for="profil-photo">Votre photo (image)</label>
+            <input type="file" id="profil-photo" accept="image/*">
+          </div>
+          <button type="submit" class="btn btn-primary">Enregistrer mon profil</button>
+        </form>
+      </section>
+
+      <!-- HISTORIQUE -->
+      <section id="tab-historique" class="tab-panel">
+        <h2>Historique</h2>
+        <p class="section-sub">Toutes les actions enregistrées sur le site.</p>
+        <div class="creator-box">
+          <button id="historique-refresh" class="btn btn-outline btn-small">&#8635; Actualiser</button>
+        </div>
+        <div id="historique-list" class="announce-list"></div>
+      </section>
+
+      <!-- BUT & MONTANT -->
+      <section id="tab-but" class="tab-panel">
+        <h2>But de Fenemof et montant</h2>
+        <div class="creator-box">
+          <h3 class="panel-h3">Le but de Fenemof (affiché sur la page d'accueil)</h3>
+          <form id="but-form">
+            <div class="field">
+              <label for="but-text">Texte du but de Fenemof</label>
+              <textarea id="but-text" rows="4" placeholder="Décrivez le but de Fenemof..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer le but</button>
+          </form>
+        </div>
+        <div class="creator-box">
+          <h3 class="panel-h3">Édition actuelle (numéro de l'édition en cours)</h3>
+          <form id="edition-actuelle-form">
+            <div class="field">
+              <label for="edition-actuelle-input">Année / numéro de l'édition actuelle</label>
+              <input type="text" id="edition-actuelle-input" placeholder="Ex : 2026" required>
+              <p class="field-hint">Chaque année, le créateur peut changer ce numéro pour la nouvelle édition.</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Définir l'édition actuelle</button>
+          </form>
+        </div>
+        <div class="creator-box">
+          <h3 class="panel-h3">Montant d'inscription (par élève)</h3>
+          <form id="montant-form">
+            <div class="field">
+              <label for="montant-input">Montant en FCFA par élève</label>
+              <input type="number" id="montant-input" min="0" placeholder="Ex : 2000" required>
+              <p class="field-hint">Ce montant apparaît sur le reçu automatique des établissements.</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer le montant</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- PARAMÈTRES -->
+      <section id="tab-parametres" class="tab-panel">
+        <h2>Paramètres</h2>
+        <div class="creator-box">
+          <h3 class="panel-h3">Changer le mot de passe créateur</h3>
+          <form id="password-form">
+            <div class="field">
+              <label for="new-password">Nouveau mot de passe (au moins 4 caractères)</label>
+              <input type="password" id="new-password" placeholder="Nouveau mot de passe" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Changer le mot de passe</button>
+          </form>
+        </div>
+        <div class="creator-box info-box">
+          <h3 class="panel-h3">Sauvegarde complète</h3>
+          <p class="section-sub">Enregistre toutes les données (inscriptions, annonces, éditions, partenaires, historique...) dans une copie de secours sur le serveur (dossier « backups »).</p>
+          <button id="backup-btn" class="btn btn-primary">&#128190; Sauvegarder toutes les données</button>
+          <p id="backup-status" class="muted" style="margin-top:8px;"></p>
+        </div>
+        <div class="creator-box info-box">
+          <h3 class="panel-h3">Informations du site (modifiables dans config.json)</h3>
+          <pre id="info-config"></pre>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="creator.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "a8d0ac17-69e4-4605-928a-129d0c1dfbe0",
+    "date": "2026-08-07 00:34:42",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "3c1d7275-fd16-4e2a-be41-442b94495620",
+    "date": "2026-08-07 00:34:42",
+    "type": "Inscription",
+    "detail": "Inscription supprimée"
+  },
+  {
+    "id": "79987949-d101-4512-adcd-16420395899d",
+    "date": "2026-08-07 00:34:24",
+    "type": "Sauvegarde",
+    "detail": "Sauvegarde complète créée : backup_20260807_003424.json"
+  },
+  {
+    "id": "407d327b-1277-4ede-87b4-a2977aee4814",
+    "date": "2026-08-07 00:16:36",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test 2 » — section lycee — 1 élève(s) (transaction TRX5678)"
+  },
+  {
+    "id": "18b306b3-0a47-48d5-a4c9-b871d8092d29",
+    "date": "2026-08-07 00:16:36",
+    "type": "Inscription",
+    "detail": "Établissement « Ecole Test » — section primaire — 1 élève(s) (transaction TRX1234)"
+  },
+  {
+    "id": "4d5a2fef-8dad-460d-bebc-24b5b4ce9172",
+    "date": "2026-08-07 00:11:27",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 1350 FCFA"
+  },
+  {
+    "id": "25e043d4-1c84-4841-b908-623e7da83704",
+    "date": "2026-08-07 00:11:22",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 1350 FCFA"
+  },
+  {
+    "id": "089f6ac7-d317-4fc8-9138-e01e4f281e4b",
+    "date": "2026-08-07 00:05:36",
+    "type": "Assistant IA",
+    "detail": "Question IA supprimée"
+  },
+  {
+    "id": "67f2efee-79e8-47cb-84e5-6eb58f207be6",
+    "date": "2026-08-07 00:05:35",
+    "type": "Écoles",
+    "detail": "École participante supprimée"
+  },
+  {
+    "id": "2c560800-9199-4df8-8b90-81bc08318449",
+    "date": "2026-08-07 00:05:35",
+    "type": "Meilleur élève",
+    "detail": "Meilleur élève supprimé"
+  },
+  {
+    "id": "3435364b-905a-4423-a509-f5e81efdfc60",
+    "date": "2026-08-07 00:05:35",
+    "type": "Édition",
+    "detail": "Édition supprimée"
+  },
+  {
+    "id": "37569205-4716-4679-9f2c-6327297a8dc8",
+    "date": "2026-08-07 00:03:58",
+    "type": "Logo",
+    "detail": "Logo du site mis à jour"
+  },
+  {
+    "id": "67100d6c-7541-4121-ab8a-1c0c8b8dd123",
+    "date": "2026-08-07 00:03:48",
+    "type": "Logo",
+    "detail": "Logo du site mis à jour"
+  },
+  {
+    "id": "27fa20b6-ab50-40fe-a1ce-8034e95c3cb1",
+    "date": "2026-08-07 00:02:05",
+    "type": "Édition",
+    "detail": "Édition actuelle définie : 2026"
+  },
+  {
+    "id": "b201caa4-ee38-4acc-962f-1776ab9a3bc9",
+    "date": "2026-08-07 00:02:05",
+    "type": "Assistant IA",
+    "detail": "Nouvelle question IA ajoutée : Comment avoir le recu ?"
+  },
+  {
+    "id": "246eb274-a93f-4319-9be0-53ef42e9a38d",
+    "date": "2026-08-07 00:02:05",
+    "type": "Écoles",
+    "detail": "École participante ajoutée : Groupe Scolaire Massengo"
+  },
+  {
+    "id": "6b22505f-95a6-4296-a49e-2c90e73e130b",
+    "date": "2026-08-07 00:02:05",
+    "type": "Meilleur élève",
+    "detail": "Meilleur élève Marie Nzaba (2026) ajouté"
+  },
+  {
+    "id": "b01e21f6-1b04-490a-91da-35a65cde80d5",
+    "date": "2026-08-07 00:02:04",
+    "type": "Édition",
+    "detail": "1 photo(s) ajoutée(s) à l'édition 2026"
+  },
+  {
+    "id": "6cb3294c-82cf-4a24-b48c-f7cfbe7e2766",
+    "date": "2026-08-07 00:02:04",
+    "type": "Édition",
+    "detail": "Édition ajoutée : Edition test (2026)"
+  },
+  {
+    "id": "cb7bab99-529d-441e-8b5a-7819ffb5c6f0",
+    "date": "2026-08-06 23:56:00",
+    "type": "Site",
+    "detail": "Montant par élève modifié : 2000 FCFA"
+  }
+]

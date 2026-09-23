@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SITE : tout en un (serveur + navigateur)",
+      "type": "shell",
+      "command": "C:\\Users\\divine\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "args": ["server/server.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "runOptions": {}
+    },
+    {
+      "label": "Voir le site (apres avoir lance le serveur)",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/c", "start", "http://localhost:8000"],
+      "problemMatcher": []
+    }
+  ]
+}

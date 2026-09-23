@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fenemof - Generation 2026 - Congo Brazzaville</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PAGE D'ACCUEIL ===== -->
+<div id="home-page" class="home-page">
+  <canvas id="particles-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+    <div class="shape shape-7"></div>
+  </div>
+  <div class="cross-left">
+    <div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div>
+  </div>
+  <div class="cross-right">
+    <div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div><div class="cross-el"></div>
+  </div>
+  <div class="gen2026-banner">
+    <div class="gen-ring"></div>
+    <div class="gen-ring gen-ring-2"></div>
+    <div class="gen2026-inner">
+      <span class="gen2026-label">Generation</span>
+      <span class="gen2026-year" id="gen-year"></span>
+      <div class="gen2026-dots"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="home-corner">
+    <h1 class="site-name-3d">FENEMOF</h1>
+    <p class="home-desc">Federation Nationale de l'Ecole Mere et de l'Ecole Fille<br>Education, solidarite et excellence au Congo Brazzaville</p>
+    <div class="home-divider"></div>
+    <p class="home-tagline">Excellence &bull; Solidarite &bull; Avenir</p>
+  </div>
+  <button id="menu-open" class="menu-btn" aria-label="Menu">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </button>
+  <div id="start-guide" class="start-guide">
+    <span class="start-guide-text">Commencez ici</span>
+    <span class="start-guide-arrow"></span>
+  </div>
+</div>
+
+<!-- ===== MENU PLEIN ECRAN ===== -->
+<div id="menu-overlay" class="menu-overlay hidden">
+  <div class="menu-top">
+    <span class="menu-brand">FENEMOF</span>
+    <button id="menu-close" class="menu-close">&times;</button>
+  </div>
+  <div class="menu-grid">
+    <a class="menu-item" href="#sec-inscription-fenemof">
+      <span>Inscription Fenemof</span>
+    </a>
+    <a class="menu-item" href="#sec-inscription-cosudo">
+      <span>Inscription <span class="menu-cosudo">Cosudo</span></span>
+    </a>
+    <a class="menu-item" href="#sec-but">
+      <span>Notre but</span>
+    </a>
+    <a class="menu-item" href="#sec-sections">
+      <span>Sections</span>
+    </a>
+    <a class="menu-item" href="#sec-meilleur">
+      <span>Meilleur eleve</span>
+    </a>
+    <a class="menu-item" href="#sec-ecoles">
+      <span>Ecoles</span>
+    </a>
+    <a class="menu-item" href="#sec-partenaires">
+      <span>Partenaires</span>
+    </a>
+    <a class="menu-item" href="#sec-editions">
+      <span>Editions</span>
+    </a>
+    <a class="menu-item" href="#sec-galerie">
+      <span>Galerie</span>
+    </a>
+    <a class="menu-item" href="#sec-devenir">
+      <span>Devenir partenaire</span>
+    </a>
+    <a class="menu-item" href="#sec-contact">
+      <span>Contact</span>
+    </a>
+    <a class="menu-item menu-creator" href="/createur.html">
+      <span>Espace Createur</span>
+    </a>
+    <a class="menu-item" href="/badge.html">
+      <span>Mon Badge</span>
+    </a>
+  </div>
+</div>
+
+<!-- ===== SECTIONS (affichees depuis le menu) ===== -->
+
+<div id="sec-inscription-fenemof" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Inscription Fenemof</h2>
+  </div>
+  <div class="container">
+    <form id="register-form" class="form" novalidate>
+      <div class="form-block">
+        <h3 class="block-title">1. Informations de l'etablissement</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="etablissement">Nom de l'etablissement *</label>
+            <input type="text" id="etablissement" required placeholder="Ex : Groupe Scolaire Massengo">
+          </div>
+          <div class="field">
+            <label for="telephone">Numero *</label>
+            <input type="tel" id="telephone" required placeholder="Ex : 06 123 45 67">
+          </div>
+          <div class="field">
+            <label for="suivi">Personnel de suivi *</label>
+            <input type="tel" id="suivi" required placeholder="Ex : 06 123 45 67">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h3 class="block-title">2. Sections</h3>
+        <p class="field-hint">Coche les sections concernees (3 eleves par section).</p>
+        <div class="section-checks">
+          <label class="section-check">
+            <input type="checkbox" id="sec-primaire" value="primaire"> Primaire
+            <span class="section-classes">CM1, CM2</span>
+          </label>
+          <label class="section-check">
+            <input type="checkbox" id="sec-college" value="college"> College
+            <span class="section-classes">6eme, 5eme, 4eme, 3eme</span>
+          </label>
+          <label class="section-check">
+            <input type="checkbox" id="sec-lycee" value="lycee"> Lycee
+            <span class="section-classes">Seconde, Premiere, Terminale</span>
+          </label>
+        </div>
+      </div>
+
+      <div id="zone-primaire" class="form-block zone-section hidden">
+        <h3 class="block-title">Primaire - 3 Eleves</h3>
+        <div id="eleves-primaire" class="eleves-section"></div>
+      </div>
+      <div id="zone-college" class="form-block zone-section hidden">
+        <h3 class="block-title">College - 3 Eleves</h3>
+        <div id="eleves-college" class="eleves-section"></div>
+      </div>
+      <div id="zone-lycee" class="form-block zone-section hidden">
+        <h3 class="block-title">Lycee - 3 Eleves</h3>
+        <div id="eleves-lycee" class="eleves-section"></div>
+      </div>
+
+      <div id="recap-sections" class="form-block hidden">
+        <h3 class="block-title">3. Recapitulatif</h3>
+        <p class="recap-text" id="recap-text"></p>
+      </div>
+
+      <div id="form-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer mon inscription</button>
+    </form>
+    <div id="register-success" class="success-box hidden">
+      <h3>Inscription enregistree !</h3>
+      <p id="register-success-msg"></p>
+      <a id="register-pay-btn" class="btn btn-primary btn-big" href="#">Payer maintenant</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div id="sec-inscription-cosudo" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Inscription <span class="accent-cosudo">Cosudo</span></h2>
+  </div>
+  <div class="container">
+    <form id="register-cosudo-form" class="form" novalidate>
+      <div class="form-block">
+        <h3 class="block-title">1. Tes informations</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="cosudo-nom">Nom complet *</label>
+            <input type="text" id="cosudo-nom" required placeholder="Ex : Mbala">
+          </div>
+          <div class="field">
+            <label for="cosudo-prenom">Prenom *</label>
+            <input type="text" id="cosudo-prenom" required placeholder="Ex : Grace">
+          </div>
+          <div class="field">
+            <label for="cosudo-telephone">Numero de telephone *</label>
+            <input type="tel" id="cosudo-telephone" required placeholder="Ex : 06 123 45 67">
+          </div>
+          <div class="field">
+            <label for="cosudo-ville">Ville *</label>
+            <input type="text" id="cosudo-ville" required placeholder="Ex : Brazzaville">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cosudo-quartier">Quartier</label>
+          <input type="text" id="cosudo-quartier" placeholder="Ex : Bacongo">
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="cosudo-rue">Rue</label>
+            <input type="text" id="cosudo-rue" placeholder="Ex : Rue 12">
+          </div>
+          <div class="field">
+            <label for="cosudo-avenue">Avenue</label>
+            <input type="text" id="cosudo-avenue" placeholder="Ex : Avenue de la Paix">
+          </div>
+        </div>
+      </div>
+      <div class="form-block">
+        <h3 class="block-title">2. Niveau scolaire</h3>
+        <div class="grid-2">
+          <div class="field">
+            <label for="cosudo-niveau">Niveau *</label>
+            <select id="cosudo-niveau" required>
+              <option value="">-- Choisir --</option>
+              <optgroup label="College (a partir de la 4eme)">
+                <option value="4eme">4eme</option>
+                <option value="3eme">3eme</option>
+              </optgroup>
+              <optgroup label="Lycee">
+                <option value="seconde">Seconde</option>
+                <option value="premiere">Premiere</option>
+                <option value="terminale">Terminale</option>
+              </optgroup>
+              <optgroup label="Universite">
+                <option value="licence1">Licence 1</option>
+                <option value="licence2">Licence 2</option>
+                <option value="licence3">Licence 3</option>
+                <option value="master1">Master 1</option>
+                <option value="master2">Master 2</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="cosudo-form-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer mon inscription</button>
+    </form>
+    <div id="cosudo-register-success" class="success-box hidden">
+      <h3>Inscription Cosudo enregistree !</h3>
+      <p id="cosudo-register-success-msg">Votre inscription a bien ete enregistree.</p>
+      <a id="cosudo-pay-btn" class="btn btn-primary btn-big" href="#">Payer maintenant</a>
+      <div id="cosudo-receipt-box" class="receipt hidden">
+        <h4>Votre recu</h4>
+        <table id="cosudo-receipt-table" class="receipt-table"></table>
+        <div class="receipt-actions">
+          <a id="cosudo-receipt-print" class="btn btn-primary" target="_blank">Imprimer le recu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sec-but" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Notre but</h2>
+  </div>
+  <div class="container">
+    <div class="but-box" id="but-text">Fenemof est la Federation Nationale de l'Ecole Mere et de l'Ecole Fille.</div>
+    <div class="but-box" id="cosudo-but-text" style="margin-top:20px;">Cosudo est la plateforme d'inscription des sections college, lycee et universite.</div>
+  </div>
+</div>
+
+<div id="sec-sections" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Nos sections</h2>
+  </div>
+  <div class="container">
+    <div class="cards">
+      <div class="card"><h3>Primaire</h3><p>Eleves du primaire.</p></div>
+      <div class="card"><h3>College</h3><p>Eleves du college.</p></div>
+      <div class="card"><h3>Lycee</h3><p>Eleves du lycee.</p></div>
+    </div>
+  </div>
+</div>
+
+<div id="sec-meilleur" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Meilleur eleve</h2>
+  </div>
+  <div class="container">
+    <div id="meilleurs-grid" class="meilleurs-grid">
+      <p id="meilleurs-empty">Le meilleur eleve sera annonce prochainement.</p>
+    </div>
+  </div>
+</div>
+
+<div id="sec-ecoles" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Ecoles participantes</h2>
+  </div>
+  <div class="container">
+    <div id="ecoles-grid" class="ecoles-grid">
+      <p id="ecoles-empty">Aucune ecole pour le moment.</p>
+    </div>
+  </div>
+</div>
+
+<div id="sec-partenaires" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Nos partenaires</h2>
+  </div>
+  <div class="container">
+    <div id="partners-grid" class="partners-grid">
+      <p id="partners-empty">Aucun partenaire pour le moment.</p>
+    </div>
+  </div>
+</div>
+
+<div id="sec-editions" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Editions</h2>
+  </div>
+  <div class="container">
+    <div id="editions-grid" class="editions-grid">
+      <p id="editions-empty">Aucune edition pour le moment.</p>
+    </div>
+  </div>
+</div>
+
+<div id="sec-galerie" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Galerie</h2>
+  </div>
+  <div class="container">
+    <div id="galerie-grid" class="galerie-grid">
+      <p id="galerie-empty">Aucune photo pour le moment.</p>
+    </div>
+    <h3 style="margin-top:30px;color:#fff;">Galerie <span class="accent-cosudo">Cosudo</span></h3>
+    <div id="cosudo-galerie-grid" class="galerie-grid" style="margin-top:14px;">
+      <p id="cosudo-galerie-empty">Aucune photo Cosudo.</p>
+    </div>
+  </div>
+</div>
+
+<div id="sec-devenir" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Devenir partenaire</h2>
+  </div>
+  <div class="container">
+    <form id="partner-request-form" class="form">
+      <div class="grid-2">
+        <div class="field"><label for="pr-nom">Votre nom *</label><input type="text" id="pr-nom" required placeholder="Votre nom"></div>
+        <div class="field"><label for="pr-org">Organisation</label><input type="text" id="pr-org" placeholder="Nom de l'organisation"></div>
+        <div class="field"><label for="pr-tel">Telephone</label><input type="tel" id="pr-tel" placeholder="Votre numero"></div>
+        <div class="field"><label for="pr-msg">Message</label><input type="text" id="pr-msg" placeholder="Pourquoi ?"></div>
+      </div>
+      <div id="pr-error" class="form-error hidden"></div>
+      <button type="submit" class="btn btn-primary btn-big">Envoyer ma demande</button>
+    </form>
+    <div id="pr-success" class="success-box hidden"><h3>Demande envoyee !</h3><p>Le createur vous contactera.</p></div>
+  </div>
+</div>
+
+<div id="sec-contact" class="page-section">
+  <div class="page-head">
+    <a href="/" class="back-link">&larr; Accueil</a>
+    <h2>Contact</h2>
+  </div>
+  <div class="container">
+    <div class="cards">
+      <div class="card contact-card"><h3>Email</h3><p id="contact-email">fenemof@gmail.com</p></div>
+      <div class="card contact-card"><h3>Telephone</h3><p id="contact-phone">064618646</p></div>
+      <div class="card contact-card"><h3>Localisation</h3><p id="contact-location">Congo Brazzaville</p></div>
+      <div class="card contact-card"><h3>WhatsApp</h3><p id="contact-whatsapp">064618646</p></div>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/242064618646" target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#eaf2fb" d="M16.04 3C9.02 3 3.32 8.7 3.32 15.72c0 2.24.59 4.42 1.7 6.35L3 29l7.11-1.86a12.68 12.68 0 0 0 5.93 1.51h.01c7.01 0 12.72-5.7 12.72-12.72C28.77 8.7 23.06 3 16.04 3zm0 23.36h-.01c-1.87 0-3.71-.5-5.31-1.45l-.38-.23-3.95 1.03 1.05-3.85-.25-.4a10.55 10.55 0 0 1-1.62-5.64c0-5.83 4.75-10.58 10.58-10.58 2.82 0 5.48 1.1 7.47 3.1a10.51 10.51 0 0 1 3.1 7.49c0 5.83-4.75 10.53-10.68 10.53zm5.8-7.92c-.32-.16-1.98-.98-2.28-1.09-.31-.11-.53-.17-.75.16-.22.32-.86 1.09-1.06 1.31-.19.22-.39.25-.71.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.91-1.79-2.23-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.56.16-.19.22-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.64c-.22 0-.58.08-.88.4-.3.32-1.15 1.12-1.15 2.74 0 1.61 1.18 3.17 1.34 3.39.16.21 2.3 3.52 5.58 4.93.78.34 1.39.54 1.86.69.79.25 1.5.21 2.07.13.63-.09 1.94-.79 2.21-1.56.27-.76.27-1.42.19-1.56-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
+
+<script>
+(function () {
+  var yearEl = document.getElementById("gen-year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+(function () {
+  var canvas = document.getElementById("particles-canvas");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var particles = [];
+  var mouse = { x: -9999, y: -9999 };
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  document.addEventListener("mousemove", function (e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    var orb = document.querySelector(".orb-3");
+    if (orb) {
+      var ox = (e.clientX / window.innerWidth - 0.5) * 40;
+      var oy = (e.clientY / window.innerHeight - 0.5) * 40;
+      orb.style.transform = "translate(" + ox + "px," + oy + "px)";
+    }
+  });
+
+  for (var i = 0; i < 70; i++) {
+    var isSpecial = i < 5;
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * (isSpecial ? 1.2 : 0.4),
+      vy: (Math.random() - 0.5) * (isSpecial ? 1.2 : 0.4),
+      r: isSpecial ? Math.random() * 3 + 2 : Math.random() * 2 + 0.8,
+      alpha: isSpecial ? 0.8 : Math.random() * 0.3 + 0.1,
+      color: isSpecial ? [26, 109, 224] : [26, 109, 224],
+      special: isSpecial,
+      pulse: Math.random() * Math.PI * 2,
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      p.x += p.vx;
+      p.y += p.vy;
+      p.pulse += 0.02;
+
+      var repel = false;
+      if (mouse.x > 0) {
+        var mdx = p.x - mouse.x;
+        var mdy = p.y - mouse.y;
+        var mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+        if (mdist < 150) {
+          var force = (150 - mdist) / 150 * 0.8;
+          p.vx += (mdx / mdist) * force;
+          p.vy += (mdy / mdist) * force;
+          repel = true;
+        }
+      }
+
+      p.vx *= 0.99;
+      p.vy *= 0.99;
+
+      if (p.x < -10) p.x = canvas.width + 10;
+      if (p.x > canvas.width + 10) p.x = -10;
+      if (p.y < -10) p.y = canvas.height + 10;
+      if (p.y > canvas.height + 10) p.y = -10;
+
+      var a = p.special ? p.alpha * (0.7 + 0.3 * Math.sin(p.pulse)) : p.alpha;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(" + p.color[0] + "," + p.color[1] + "," + p.color[2] + "," + a + ")";
+      if (p.special) {
+        ctx.shadowColor = "rgba(26,109,224,0.6)";
+        ctx.shadowBlur = 12;
+      }
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+
+    for (var i = 0; i < particles.length; i++) {
+      for (var j = i + 1; j < particles.length; j++) {
+        var dx = particles[i].x - particles[j].x;
+        var dy = particles[i].y - particles[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          var alpha = 0.12 * (1 - dist / 130);
+          if (particles[i].special || particles[j].special) alpha *= 2;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = "rgba(26,109,224," + alpha + ")";
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        }
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+
+  var confCanvas = document.getElementById("confetti-canvas");
+  if (confCanvas) {
+    var cCtx = confCanvas.getContext("2d");
+    var confettis = [];
+    var colors = ["#0d4fbf", "#1a6de0", "#25d366", "#fff", "#b0c4de", "#0a3d8f", "#128c7e"];
+
+    function resizeConf() {
+      confCanvas.width = window.innerWidth;
+      confCanvas.height = window.innerHeight;
+    }
+    resizeConf();
+    window.addEventListener("resize", resizeConf);
+
+    function spawnConfetti() {
+      for (var i = 0; i < 2; i++) {
+        var type = Math.random();
+        confettis.push({
+          x: Math.random() * confCanvas.width,
+          y: -10,
+          w: Math.random() * 10 + 3,
+          h: Math.random() * 6 + 3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          speed: Math.random() * 2 + 0.8,
+          angle: Math.random() * Math.PI * 2,
+          spin: (Math.random() - 0.5) * 0.1,
+          drift: (Math.random() - 0.5) * 1.2,
+          wobble: Math.random() * Math.PI * 2,
+          wobbleSpeed: Math.random() * 0.05 + 0.02,
+          type: type < 0.3 ? "star" : type < 0.7 ? "rect" : "circle",
+        });
+      }
+    }
+
+    function drawStar(ctx, x, y, r, rot) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(rot);
+      ctx.beginPath();
+      for (var i = 0; i < 5; i++) {
+        var a = (i * 4 * Math.PI) / 5 - Math.PI / 2;
+        var method = i === 0 ? "moveTo" : "lineTo";
+        ctx[method](Math.cos(a) * r, Math.sin(a) * r);
+      }
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawConfetti() {
+      cCtx.clearRect(0, 0, confCanvas.width, confCanvas.height);
+      for (var i = confettis.length - 1; i >= 0; i--) {
+        var c = confettis[i];
+        c.y += c.speed;
+        c.x += c.drift + Math.sin(c.wobble) * 0.5;
+        c.angle += c.spin;
+        c.wobble += c.wobbleSpeed;
+        if (c.y > confCanvas.height + 20) {
+          confettis.splice(i, 1);
+          continue;
+        }
+        var fade = Math.min(1, (confCanvas.height - c.y) / confCanvas.height * 2.5);
+        cCtx.save();
+        cCtx.globalAlpha = fade;
+        cCtx.fillStyle = c.color;
+        if (c.type === "star") {
+          drawStar(cCtx, c.x, c.y, c.w * 0.5, c.angle);
+        } else if (c.type === "circle") {
+          cCtx.beginPath();
+          cCtx.arc(c.x, c.y, c.w * 0.4, 0, Math.PI * 2);
+          cCtx.fill();
+        } else {
+          cCtx.translate(c.x, c.y);
+          cCtx.rotate(c.angle);
+          cCtx.fillRect(-c.w / 2, -c.h / 2, c.w, c.h);
+        }
+        cCtx.restore();
+      }
+      if (Math.random() < 0.25) spawnConfetti();
+      requestAnimationFrame(drawConfetti);
+    }
+    drawConfetti();
+  }
+})();
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>

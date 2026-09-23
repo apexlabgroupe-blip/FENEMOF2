@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paiement — Fenemof</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2306090f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-weight='bold' font-size='36' fill='%231f7ae0' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.pay-hero { text-align: center; padding: 60px 20px 40px; }
+.pay-hero h1 { color: #fff; font-size: 1.8rem; margin-bottom: 10px; }
+.pay-hero p { color: #999; font-size: 1rem; }
+.pay-card {
+  background: var(--dark); border: 2px solid var(--blue-strong);
+  border-radius: var(--radius); padding: 40px 30px;
+  max-width: 480px; margin: 0 auto; text-align: center;
+}
+.pay-section-label {
+  display: inline-block; background: var(--blue-strong); color: #fff;
+  padding: 4px 14px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; margin-bottom: 12px;
+}
+.pay-amount { font-size: 2.5rem; font-weight: 900; color: #fff; margin: 16px 0 6px; }
+.pay-amount-label { color: #999; font-size: 0.95rem; margin-bottom: 24px; }
+.pay-steps { text-align: left; max-width: 360px; margin: 0 auto 24px; color: #ccc; font-size: 0.95rem; }
+.pay-steps li { margin-bottom: 10px; padding-left: 4px; }
+.pay-steps strong { color: #fff; }
+.pay-btn {
+  display: block; width: 100%; padding: 16px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff; text-decoration: none; border-radius: 12px;
+  font-weight: 800; font-size: 1.1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.pay-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.4); }
+.pay-hint { color: #666; font-size: 0.82rem; margin-top: 16px; }
+.pay-after { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+.pay-outline {
+  display: block; width: 100%; padding: 14px;
+  background: transparent; color: #fff; text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.15); border-radius: 12px;
+  font-weight: 700; font-size: 0.95rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+.pay-outline:hover { border-color: var(--blue-strong); background: rgba(13,79,191,0.1); }
+.pay-num-box {
+  background: var(--dark-2); border: 1.5px dashed var(--blue-strong);
+  border-radius: 10px; padding: 12px; margin: 0 0 18px;
+  display: flex; flex-direction: column; gap: 4px; align-items: center;
+}
+.pay-num-box span { color: var(--gray); font-size: 0.85rem; }
+.pay-num-value {
+  font-size: 1.8rem; font-weight: 900; color: var(--blue-glow);
+  letter-spacing: 3px; font-family: inherit;
+}
+.pay-num-box small { color: #666; font-size: 0.78rem; }
+.wa-outline { border-color: rgba(37,211,102,0.4); color: #25d366; }
+.wa-outline:hover { border-color: #25d366; background: rgba(37,211,102,0.12); }
+</style>
+</head>
+<body>
+
+<div class="home-page" style="position:relative;">
+  <div class="pay-hero">
+    <h1>Derniere etape : <span style="color:var(--blue-glow);">le paiement</span></h1>
+    <p>Paye en ligne avec Yelen Money.</p>
+  </div>
+
+  <section class="section" style="padding:0 20px;">
+    <div class="pay-card">
+      <div class="pay-section-label" id="pay-section-label">Fenemof</div>
+      <h3 id="pay-title">Inscription</h3>
+      <div class="pay-amount" id="pay-amount">-- FCFA</div>
+      <div class="pay-amount-label" id="pay-amount-label">par etablissement</div>
+      <div id="pay-num-box" class="pay-num-box" style="display:none;">
+        <span>Votre numero d'inscription :</span>
+        <strong id="pay-num-value" class="pay-num-value">-</strong>
+        <small>Envoyez-le au createur par WhatsApp apres le paiement pour valider votre badge.</small>
+      </div>
+
+      <ol class="pay-steps">
+        <li>Clique sur <strong>Payer maintenant</strong></li>
+        <li>Paie avec <strong>Yelen Money</strong> sur la page securisee</li>
+        <li>Apres le paiement, ouvre ton espace pour recevoir ton badge</li>
+      </ol>
+
+      <a id="pay-now-btn" class="pay-btn" href="#" target="_blank" rel="noopener">Payer maintenant</a>
+      <p class="pay-hint">Tu seras redirige vers la page securisee Yelen Money.</p>
+
+      <div class="pay-after">
+        <a id="pay-espace-btn" class="pay-outline" href="#">Ouvrir mon espace</a>
+        <a id="pay-wa-btn" class="pay-outline wa-outline" href="#" target="_blank" rel="noopener">Avertir par WhatsApp</a>
+        <a href="/" class="pay-outline">Retour a l'accueil</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var section = params.get("section") || "primaire";
+  var montantParam = parseInt(params.get("montant"), 10) || 0;
+  var num = params.get("num") || "";
+  var etab = params.get("etab") || "";
+  var tel = params.get("tel") || "";
+
+  var sectionLabel = document.getElementById("pay-section-label");
+  var payTitle = document.getElementById("pay-title");
+  var payAmount = document.getElementById("pay-amount");
+  var payAmountLabel = document.getElementById("pay-amount-label");
+  var payBtn = document.getElementById("pay-now-btn");
+  var payEspace = document.getElementById("pay-espace-btn");
+  var payWa = document.getElementById("pay-wa-btn");
+
+  var links = {
+    3300: "https://pay.yelen.co/pay/6DHD-XSCA",
+    6600: "https://pay.yelen.co/pay/92QT-KDWV",
+    9900: "https://pay.yelen.co/pay/2W29-S9KR",
+  };
+
+  var typeLabel = "Fenemof";
+  if (section === "cosudo") {
+    typeLabel = "Cosudo";
+    sectionLabel.textContent = "Cosudo";
+    payTitle.textContent = "Inscription Cosudo";
+    payAmount.textContent = "2 200 FCFA";
+    payBtn.href = "https://pay.yelen.co/pay/PW86-VFZB";
+    payEspace.href = "/badge.html";
+  } else {
+    var montant = montantParam || 3300;
+    var link = links[montant] || links[3300];
+    var labelSections = section === "multi" ? "Sections combinees" : section.charAt(0).toUpperCase() + section.slice(1);
+    sectionLabel.textContent = "Fenemof - " + labelSections;
+    payTitle.textContent = "Inscription Fenemof";
+    payAmount.textContent = montant.toLocaleString("fr-FR") + " FCFA";
+    payBtn.href = link;
+    payEspace.href = "/badge.html";
+  }
+
+  fetch("/api/siteinfo")
+    .then(function (r) { return r.json(); })
+    .then(function (info) {
+      var waRaw = info.whatsapp || "";
+      var waNum = ("242" + String(waRaw).replace(/\D/g, "")).replace(/^242242/, "242");
+      if (!waNum || waNum.length < 10) waNum = "242064618646";
+      var nomAff = etab || (section === "cosudo" ? "membre Cosudo" : "etablissement");
+      var msg = "Bonjour Fenemof, je viens de m'inscrire (" + typeLabel + ") : " + nomAff +
+        ". Mon numero d'inscription est : " + num +
+        (tel ? ". Telephone : " + tel : "") +
+        ". Merci de valider mon badge.";
+      payWa.href = "https://wa.me/" + waNum + "?text=" + encodeURIComponent(msg);
+      var numEl = document.getElementById("pay-num-box");
+      if (numEl) {
+        numEl.style.display = "block";
+        document.getElementById("pay-num-value").textContent = num || "-";
+      }
+    })
+    .catch(function () {});
+})();
+</script>
+
+</body>
+</html>
