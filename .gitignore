@@ -1,4 +1,10 @@
 __pycache__/
 *.pyc
-data/backups/
 .env
+config.json
+data/
+uploads/
+backups/
+server/*.log
+*.txt
+.vscode/
